@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif
+}
+
+#active-about-contact {
+	font-weight: 700;
+	color: black
+}
+
+.side-bar {
+	margin-top: 5vh
+}
+
+.side-bar .name {
+	align-self: auto;
+	text-align: center;
+	font-family: 'Heebo', sans-serif
+}
+
+.side-bar .name h1 {
+	color: #1845AD;
+	font-size: 3em;
+	margin-bottom: 5px;
+	font-weight: 600
+}
+
+@media all and (max-width: 640px) {
+	.side-bar .name h1 {
+		font-size: 1.75em
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.side-bar .name h1 {
+		font-size: 3em
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.side-bar .name h1 {
+		font-size: 2.58371em
+	}
+}
+
+@media all and (max-width: 806px) {
+	.side-bar .name h1 {
+		font-size: 2.14791em
+	}
+}
+
+.side-bar .name h2 {
+	font-size: 1.5em;
+	margin-top: 0;
+	font-weight: 400;
+	color: #95989A
+}
+
+@media all and (max-width: 640px) {
+	.side-bar .name h2 {
+		font-size: 1.2em
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.side-bar .name h2 {
+		font-size: 1.5em
+	}
+}
+
+@media all and (max-width: 800px) {
+	.side-bar .name h2 {
+		font-size: 1.35714em
+	}
+}
+
+.side-bar .list {
+	text-align: center;
+	margin-top: 8vh;
+	list-style-type: none;
+	padding: 0
+}
+
+.side-bar .list li {
+	margin-top: 2vh
+}
+
+.side-bar .list a {
+	color: black;
+	font-size: 1.5em
+}
+
+@media all and (max-width: 640px) {
+	.side-bar .list a {
+		font-size: 1em
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.side-bar .list a {
+		font-size: 1.5em
+	}
+}
+
+@media all and (max-width: 800px) {
+	.side-bar .list a {
+		font-size: 1.17857em
+	}
+}
+
+.side-bar .about-contact {
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	text-align: center;
+	padding: 0
+}
+
+.side-bar .about-contact li {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px
+}
+
+.side-bar .about-contact li a {
+	color: #95989A;
+	font-size: 1.5em
+}
+
+@media all and (max-width: 640px) {
+	.side-bar .about-contact li a {
+		font-size: 1em
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.side-bar .about-contact li a {
+		font-size: 1.5em
+	}
+}
+
+@media all and (max-width: 800px) {
+	.side-bar .about-contact li a {
+		font-size: 1.17857em
+	}
+}
+
+.content {
+	margin-top: 5vh
+}
+
+.content h1 {
+	font-family: 'Heebo', sans-serif;
+	color: #1845AD;
+	font-size: 3em;
+	margin-bottom: 5px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center
+}
+
+@media all and (max-width: 640px) {
+	.content h1 {
+		font-size: 1.75em
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.content h1 {
+		font-size: 3em
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.content h1 {
+		font-size: 2.58371em
+	}
+}
+
+@media all and (max-width: 806px) {
+	.content h1 {
+		font-size: 2.14791em
+	}
+}
