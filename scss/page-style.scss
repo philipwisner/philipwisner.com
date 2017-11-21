@@ -8,11 +8,13 @@ $lighter-color: #95989A;
 }
 
 @media screen and (min-width: 0px) and (max-width: 765px) {
-  .side-bar { display: none; }  /* show it on small screens */
+  .side-bar { display: none; }
+	.toggle {display: block; }
 }
 
-@media screen and (min-width: 766px) and (max-width: 1024px) {
-  .side-bar { display: block; }   /* hide it elsewhere */
+@media screen and (min-width: 766px) and (max-width: 20000px) {
+  .side-bar { display: block; }
+	.toggle {display: none; }
 }
 
 #active-about-contact {
@@ -33,7 +35,7 @@ $lighter-color: #95989A;
 			font-weight: 600;
 			}
 		h2 {
-			@include responsive-font-size (1.2em, 1.5em, 640px, 1200px, 0.5em);
+			@include responsive-font-size (1.3em, 1.8em, 640px, 1200px, 0.5em);
 			margin-top: 0;
 			font-weight: 400;
 			color: $lighter-color;
