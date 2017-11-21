@@ -17,8 +17,8 @@
 </head>
 <body>
 	<div class="container-fluid ">
-		<button onclick="" class="toggle">toggle</button>
-		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar">
+		<button id="toggle" onclick="toggleNav()">{ }</button>
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse" id="side-nav">
 			<div class="name">
 				<h1>&lt;philip.wisner&gt;</h1>
 				<h2>web developer</h2>
@@ -44,11 +44,24 @@
 			</ul>
 		</div>
 
+
 		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 content">
-			<h1>ABOUT</h1>
+			<h1>About</h1>
 		</div>
 	</div>
 
+	<script>
+		function toggleNav() {
+			var x = document.getElementById("side-nav");
+			if (x.style.display === "none") {
+					x.style.display = "block";
+			} else {
+					x.style.display = "none";
+			}
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
 
