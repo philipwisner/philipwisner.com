@@ -17,6 +17,12 @@ $lighter-color: #95989A;
 	#toggle {display: none; }
 }
 
+#active {
+	color: $accent-color;
+	font-weight: 700;
+}
+
+
 #active-about-contact {
 	font-weight: 700;
 	color: black;
@@ -35,6 +41,7 @@ $lighter-color: #95989A;
 
 .side-bar {
 	margin-top: 5vh;
+	z-index: 5;
 	.name {
 		align-self: auto;
 		text-align: center;
@@ -96,16 +103,44 @@ $lighter-color: #95989A;
 	}
 }
 
-
 .content {
 	margin-top: 5vh;
 	h1 {
 		font-family: 'Heebo', sans-serif;
 		color: $accent-color;
-		@include responsive-font-size (1.75em, 3em, 640px, 1200px, 0.5em);
+		@include responsive-font-size (2.5em, 3.5em, 640px, 1200px, 0.5em);
 		margin-bottom: 5px;
 		font-weight: 600;
 		text-transform: uppercase;
 		text-align: center;
+	}
+}
+
+.contact-info {
+	margin-top: 8vh;
+	padding: 0 10px 0 10px;
+	h2 {
+		@include responsive-font-size (1.6em, 2.1em, 640px, 1200px, 0.5em);
+	}
+	p {
+		color: $lighter-color;
+		@include responsive-font-size (1em, 1.5em, 640px, 1200px, 0.5em);
+		margin-bottom: 5vh;
+	}
+	i, a {
+		color: $lighter-color;
+	}
+}
+
+.construction {
+	img {
+		max-width: 250px;
+		margin-top: 10vh;
+	}
+	p {
+		color: $lighter-color;
+		margin-top: 5vh;
+		text-align: center;
+		@include responsive-font-size (1.4em, 2em, 640px, 1200px, 0.5em);
 	}
 }
