@@ -144,3 +144,7 @@ $lighter-color: #95989A;
 		@include responsive-font-size (1.4em, 2em, 640px, 1200px, 0.5em);
 	}
 }
+
+#mapdiv {
+	margin-top: 5vh;
+}
