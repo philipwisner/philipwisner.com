@@ -1,3 +1,12 @@
 @import "responsive-font-size";
 $accent-color: #1845AD;
 $lighter-color: #95989A;
+
+.about {
+	margin-top: 4vh;
+	margin-bottom: 10vh;
+	img {
+		max-width: 55%;
+		margin-bottom: 5vh;
+	}
+}
