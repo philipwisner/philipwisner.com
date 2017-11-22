@@ -1,0 +1,35 @@
+$accent-color: #1845AD;
+$lighter-color: #95989A;
+
+#mapdiv {
+	margin-top: 5vh;
+}
+
+.country-list {
+	margin-top: 5vh;
+}
+
+.country-number {
+	margin-top: 5vh;
+	h2 {
+		text-align: center;
+		@include responsive-font-size (1.4em, 2.2em, 640px, 1200px, 0.5em);
+	}
+	span {
+		color: $accent-color;
+		font-weight: 700;
+	}
+}
+
+.panel-heading {
+	border-top: .5px solid $lighter-color;
+}
+
+.panel {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.gap {
+	margin-bottom: 8vh;
+}
