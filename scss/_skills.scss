@@ -19,18 +19,28 @@ $lighter-color: #95989A;
 	}
 }
 
+
 .skills {
-	max-width: 1000px;
+	max-width: 700px;
 	margin: 0 auto;
 	margin-bottom: 10vh;
 	h2 {
-		text-align: center
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin-bottom: 3vh;
+		@include responsive-font-size (1.8em, 2.2em, 640px, 1200px, 0.5em);
+	}
+	p {
+		margin-top: 13px;
+		@include responsive-font-size (.9em, 1.2em, 640px, 1200px, 0.5em);
 	}
 	ul {
 		list-style-type: none;
 		margin: 0 auto;
 		text-align: center;
 		padding: 0;
+		margin-bottom: 5vh;
 	}
 	li {
 		display: inline-block;
@@ -42,17 +52,23 @@ $lighter-color: #95989A;
 		margin-bottom: 1vh;
 		font-size: 16px;
 	}
-	.sass, .node, .react, .vue, .python, .ruby, .java, .aws, .heroku, .illustrator, .photo {
+	.sass, .node, .react, .vue, .python, .ruby, .java, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .d3, .figma, .net, .portuguese {
 		width: 100%;
 	}
 	.express {
 		width: 85%;
 	}
-	.redux, .csharp {
+	.redux, .csharp, .backbone {
 		width: 95%;
 	}
 	.go {
 		width: 70%;
+	}
+	.spanish {
+		width: 82%;
+	}
+	.italian {
+		width: 60%;
 	}
 	.php {
 		width: 100%;
