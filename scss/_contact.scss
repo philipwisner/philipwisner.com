@@ -3,9 +3,11 @@ $accent-color: #1845AD;
 $lighter-color: #95989A;
 
 .contact-info {
-	margin-top: 8vh;
-	text-align: center;
+	text-align: left;
 	padding: 0 10px 0 10px;
+	margin: 0 auto;
+	max-width: 1000px;
+	margin-top: 8vh;
 	h2 {
 		@include responsive-font-size (1.5em, 2.1em, 640px, 1200px, 0.5em);
 	}

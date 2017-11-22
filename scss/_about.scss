@@ -3,8 +3,21 @@ $accent-color: #1845AD;
 $lighter-color: #95989A;
 
 .about {
+	margin: 0 auto;
 	margin-top: 4vh;
 	margin-bottom: 10vh;
+	max-width: 1000px;
+	a {
+		color: $accent-color;
+		font-weight: 700;
+	}
+	h2 {
+		margin-top: 35px;
+		@include responsive-font-size (1.8em, 2.5em, 640px, 1200px, 0.5em);
+	}
+	p {
+		@include responsive-font-size (1em, 1.2em, 640px, 1200px, 0.5em);
+	}
 	img {
 		max-width: 55%;
 		margin-bottom: 5vh;
