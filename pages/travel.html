@@ -1,1 +1,72 @@
-travel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="portfolio">
+  <meta name="author" content="philip wisner">
+  <title>Philip Wisner | Web Developer</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="../page-style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid ">
+			<button id="toggle" onclick="toggleNav()">{ }</button>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse" id="side-nav">
+				<div class="name">
+					<h1>&lt;philip.wisner&gt;</h1>
+					<h2>web developer</h2>
+				</div>
+				<ul class="list">
+					<li><a href="skills.html">Skills</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="websites.html">Websites</a></li>
+					<li><a href="apps.html">Apps</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="photography.html">Photography</a></li>
+					<li><a href="design.html">Design</a></li>
+					<li><a href="travel.html" id="active">{ Travel }</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+				<ul class="social">
+					<li><a href="https://github.com/philipwisner" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/philipwisner" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+				</ul>
+				<ul class="about-contact">
+					<li><a href="about.html">about</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</div>
+
+		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
+			<h1>Travel</h1>
+			<div class="construction">
+				<img src="../images/wrench.svg" alt="wrench" class="img-responsive center-block">
+				<p>under construction</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function toggleNav() {
+			var x = document.getElementById("side-nav");
+			var y = document.getElementById("content")
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					y.style.display = "none";
+			} else {
+					x.style.display = "none";
+					y.style.display = "block";
+			}
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
