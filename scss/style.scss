@@ -7,14 +7,41 @@ $lighter-color: #95989A;
 	font-family: 'Open Sans', sans-serif;
 }
 
-
-div {
-//	border: .5px solid grey;
+@media screen and (min-width: 0px) and (max-width: 988px) {
+	.home {
+		margin-top: 3vh;
+	}
+	.name {
+		h1 {
+			margin-bottom: 4px;
+		}
+	}
+	.social {
+		margin-top: 5vh;
+	}
+	.about-contact {
+		margin-top: 5vh;
+	}
 }
 
+@media screen and (min-width: 989px) and (max-width: 20000px) {
+	.home {
+		margin-top: 10vh;
+	}
+	.name {
+		h1 {
+			margin-bottom: 8px;
+		}
+	}
+	.social {
+		margin-top: 8vh;
+	}
+	.about-contact {
+		margin-top: 8vh;
+	}
+}
 
 .home {
-	margin-top: 10vh;
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -51,9 +78,7 @@ div {
 	h1 {
 		color: $accent-color;
 		@include responsive-font-size (2.5em, 4.5em, 640px, 1200px, 0.5em);
-		margin-bottom: 8px;
 		font-weight: 600;
-
 	}
 	h2 {
 		@include responsive-font-size (1.3em, 2.5em, 640px, 1200px, 0.5em);
@@ -92,7 +117,6 @@ div {
 	list-style-type: none;
 	text-align: center;
 	padding: 0;
-	margin-top: 8vh;
 	li {
 		display: inline-block;
 		margin: 0 20px 0 20px;
@@ -100,7 +124,6 @@ div {
 }
 
 .about-contact {
-	margin-top: 8vh;
 	margin-bottom: 5vh;
 	li {
 		display: inline-block;
