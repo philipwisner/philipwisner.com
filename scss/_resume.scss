@@ -2,12 +2,26 @@
 $accent-color: #1845AD;
 $lighter-color: #95989A;
 
+
+@media screen and (min-width: 0px) and (max-width: 765px) {
+	img {
+		margin-top: 3vh;
+	}
+}
+
 .resume {
 	max-width: 1000px;
 	margin: 0 auto;
 	margin-bottom: 10vh;
 	img {
-		margin-top: 5vh;
 		width: 100%;
+	}
+	a {
+		display: block;
+		margin-top: 3vh;
+		text-align: center;
+		color: $accent-color;
+		@include responsive-font-size (.7em, 1.85em, 640px, 1200px, 0.5em);
+
 	}
 }
