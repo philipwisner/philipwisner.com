@@ -1,0 +1,37 @@
+@import "responsive-font-size";
+$accent-color: #1845AD;
+$lighter-color: #95989A;
+
+@media screen and (min-width: 0px) and (max-width: 765px) {
+	.photography {
+		img {
+			margin-top: -3vh;
+			max-width: 150px;
+		}
+	}
+}
+
+@media screen and (min-width: 766px) and (max-width: 4000px) {
+	.photography {
+		a {
+			img {
+				margin-top: 2vh;
+				max-width: 250px;
+			}
+		}
+	}
+}
+
+.insta {
+	p {
+		text-align: center;
+		@include responsive-font-size (1em, 1.5em, 640px, 1200px, 0.5em);
+		margin: 3vh 0 5vh 0;
+	}
+	a {
+		text-align: center;
+		margin: 0 auto;
+		color: $accent-color;
+		font-weight: bold;
+	}
+}
