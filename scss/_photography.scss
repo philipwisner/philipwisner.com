@@ -22,16 +22,20 @@ $lighter-color: #95989A;
 	}
 }
 
-.insta {
-	p {
-		text-align: center;
-		@include responsive-font-size (1em, 1.5em, 640px, 1200px, 0.5em);
-		margin: 3vh 0 5vh 0;
-	}
-	a {
-		text-align: center;
-		margin: 0 auto;
-		color: $accent-color;
-		font-weight: bold;
+.photography {
+	max-width: 1000px;
+	margin: 0 auto;
+	.insta {
+		p {
+			text-align: center;
+			@include responsive-font-size (1em, 1.5em, 640px, 1200px, 0.5em);
+			margin: 3vh 0 5vh 0;
+		}
+		a {
+			text-align: center;
+			margin: 0 auto;
+			color: $accent-color;
+			font-weight: bold;
+		}
 	}
 }
