@@ -2,16 +2,45 @@
 $accent-color: #1845AD;
 $lighter-color: #95989A;
 
+@media screen and (min-width: 0px) and (max-width: 765px) {
+	.portfolio {
+		.category {
+			h2 {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 766px) and (max-width: 5000px) {
+	.portfolio {
+		.category {
+			h2 {
+				margin-bottom: 3vh;
+			}
+		}
+	}
+}
+
 
 .portfolio {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0;
-	.more {
-		display: block;
+	margin-top: -5vh;
+	margin-bottom: 8vh;
+	.category {
+		h2 {
+			display: inline-block;
+			@include responsive-font-size (1.6em, 2.5em, 640px, 1200px, 0.5em);
+			text-indent: 12px;
+		}
+		a {
+			display: inline-block;
+			margin-left: 10px;
+		}
 	}
-	.row {
-		margin: 2vh 0 4vh 0;
-		padding: 0;
+	.portfolio-item {
+		margin-bottom: 5vh;
 	}
 }
