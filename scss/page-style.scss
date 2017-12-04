@@ -26,8 +26,9 @@ $lighter-color: #95989A;
 		position: fixed;
 	}
 	#content {
-		position: relative;
-		left: 427px;
+		display: block;
+		position: absolute;
+		right: 0;
 	}
 	#toggle {
 		display: none;
