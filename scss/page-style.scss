@@ -20,14 +20,16 @@ $lighter-color: #95989A;
 	#toggle { display: block; }
 }
 
+
+
 @media screen and (min-width: 766px) and (max-width: 20000px) {
 	#side-nav { display: block;
-//	position: fixed;
+	position: fixed;
 }
-//	#content {
-//	position: relative;
-//	left: 427px;
-//}
+	#content {
+	position: relative;
+	left: 427px;
+}
 	#toggle { display: none; }
 }
 
