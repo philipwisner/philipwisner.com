@@ -108,8 +108,14 @@ $lighter-color: #95989A;
 		}
 	}
 	a {
-	color: black;
-	@include responsive-font-size (1em, 2em, 640px, 1200px, 0.5em);
+		color: black;
+		@include responsive-font-size (1em, 2em, 640px, 1200px, 0.5em);
+		font-weight: normal;
+	}
+	& :hover {
+		color: $accent-color;
+		text-decoration: none;
+		font-weight: 700;
 	}
 }
 
@@ -121,6 +127,9 @@ $lighter-color: #95989A;
 		display: inline-block;
 		margin: 0 20px 0 20px;
 	}
+	a:hover {
+		color: $accent-color;
+	}
 }
 
 .about-contact {
@@ -131,6 +140,11 @@ $lighter-color: #95989A;
 		margin-right: 20px;
 		a {
 			color: $lighter-color;
+		}
+		& :hover {
+			color: black;
+			text-decoration: none;
+			font-weight: 700;
 		}
 	}
 }
