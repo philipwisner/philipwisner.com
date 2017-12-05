@@ -39,7 +39,7 @@ $lighter-color: #95989A;
 			}
 			p {
 				@include responsive-font-size (1em, 1.2em, 640px, 1200px, 0.5em);
-				margin-bottom: 15px;
+				margin-bottom: 20px;
 			}
 			.date {
 				margin-bottom: 5px;;
@@ -48,7 +48,19 @@ $lighter-color: #95989A;
 			}
 		}
 	}
-	.after-posts {
-
+	.after-post {
+		h4 {
+			font-weight: 700;
+			margin-top: 25px;
+			@include responsive-font-size (1.2em, 1.6em, 640px, 1200px, 0.5em);
+		}
+		li a {
+			@include responsive-font-size (1em, 1.2em, 640px, 1200px, 0.5em);
+			color: $accent-color;
+		}
+		.post-end {
+			margin-top: 35px;
+			font-style: italic;
+		}
 	}
 }
