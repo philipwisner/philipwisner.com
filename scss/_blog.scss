@@ -3,20 +3,43 @@ $accent-color: #1845AD;
 $lighter-color: #95989A;
 
 .blog {
-	margin: 0 auto;
 	margin-bottom: 10vh;
-	max-width: 1000px;
-	.posts{
+	.heading {
+		max-width: 1100px;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 5vh;
+		background-color: $accent-color;
+		color: white;
+		padding: 15px;
+		h2 {
+			font-weight: 700;
+			margin-bottom: 2vh;
+			margin-top: 4vh;
+			@include responsive-font-size (1.8em, 3.2em, 350px, 1200px, 0.5em);
+			text-transform: uppercase;
+		}
+		p {
+			@include responsive-font-size (.85em, 1.3em, 350px, 1200px, 0.5em);
+			max-width: 800px;
+			margin: 0 auto;
+			padding-bottom: 35px;
+		}
+	}
+	.posts {
+		max-width: 1000px;
+		margin: 0 auto;
 		.post {
-			margin-bottom: 8vh;
-			h2 {
+			margin-bottom: 6vh;
+			h3 {
 				font-weight: 700;
 				margin-bottom: 2vh;
 				margin-top: 0;
-				@include responsive-font-size (1.8em, 2.5em, 640px, 1200px, 0.5em);
+				@include responsive-font-size (1.6em, 2.3em, 640px, 1200px, 0.5em);
 			}
 			p {
 				@include responsive-font-size (1em, 1.2em, 640px, 1200px, 0.5em);
+				margin-bottom: 15px;
 			}
 			.date {
 				margin-bottom: 5px;;
@@ -24,5 +47,8 @@ $lighter-color: #95989A;
 				color: $lighter-color;
 			}
 		}
+	}
+	.after-posts {
+
 	}
 }
