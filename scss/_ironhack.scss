@@ -1,0 +1,65 @@
+@import "responsive-font-size";
+$accent-color: #1845AD;
+$lighter-color: #95989A;
+
+.pair-programming {
+	max-width: 900px;
+	margin: 0 auto;
+	margin-top: 5vh;
+	margin-bottom: 10vh;
+	a {
+		color: $accent-color;
+		&:hover {
+			color: $accent-color;
+			text-decoration: none;
+			font-weight: 700;
+		}
+	}
+	h2 {
+		font-weight: 700;
+		margin-bottom: 5vh;
+		@include responsive-font-size (1.6em, 2.2em, 640px, 1200px, 0.5em);
+	}
+	h3 {
+		font-weight: 600;
+		@include responsive-font-size (1.4em, 1.8em, 640px, 1200px, 0.5em);
+	}
+	ul {
+		margin-bottom: 4vh;
+		li {
+			@include responsive-font-size (.9em, 1.2em, 640px, 1200px, 0.5em);
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.daily-exercises {
+	max-width: 900px;
+	margin: 0 auto;
+	margin-top: 5vh;
+	margin-bottom: 10vh;
+	a {
+		color: $accent-color;
+		&:hover {
+			color: $accent-color;
+			text-decoration: none;
+			font-weight: 700;
+		}
+	}
+	h2 {
+		font-weight: 700;
+		margin-bottom: 5vh;
+		@include responsive-font-size (1.6em, 2.2em, 640px, 1200px, 0.5em);
+	}
+	h3 {
+		font-weight: 600;
+		@include responsive-font-size (1.4em, 1.8em, 640px, 1200px, 0.5em);
+	}
+	ul {
+		margin-bottom: 4vh;
+		li {
+			@include responsive-font-size (.9em, 1.2em, 640px, 1200px, 0.5em);
+			margin-bottom: 10px;
+		}
+	}
+}
