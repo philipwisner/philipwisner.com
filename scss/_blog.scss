@@ -63,6 +63,9 @@ $lighter-color: #95989A;
 				margin-bottom: 2vh;
 				margin-top: 0;
 				@include responsive-font-size (1.6em, 2.3em, 640px, 1200px, 0.5em);
+				span {
+					font-weight: 800;
+				}
 			}
 			p {
 				@include responsive-font-size (1em, 1.3em, 640px, 1200px, 0.5em);

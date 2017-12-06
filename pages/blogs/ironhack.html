@@ -336,25 +336,207 @@
 						</div>
 					</div>
 					<div class="post">
-						<p class="date">9/25/2017</p>
-						<h3>Day 31: Angular</h3>
-						<p>I really wanted to learn the MEAN stack because I have always been interested in the front end and really wanted to learn front-end frameworks especially Angular and React. Those are quite intimidating to a new learner, so that was a big factor in my joining the boot camp. So now that we did the MEN part of the stack we learned how to make apps but using the server to generate everything instead of relying on the frontend. Today we learned TypeScript which is what Angular uses throughout its framework.</p>
-						<p>TypeScript is cool but it's always a lot of work to switch to something new. Then we looked at an already created Angular app, and there were so many files and folders. But after playing around and creating some components it started to make sense. Overall it wasn't too bad but I don't think we really scratched the surface of what Angular can do. The daily exercise dipped my toe in the water, but I'm excited to create an entire SPA using Angular.</p>
+						<p class="date">9/22/2017</p>
+						<h3>Day 30: Just a few more minutes…</h3>
+						<p>So today is the day of the presentation of our app. Most of our app was done and the route and farms were being added to the database, now we just needed to display them in the user's profile and be able to click and see back on the map. My partner did the route and I did the farm, but he did not push his code to Github so I couldn't start working on displaying it in the profile. So I just started to create cards with the info that would be displayed in the profile section.</p>
+						<p>My partner came in later and then gave me his code which had all the info I needed to get the info displayed in the account. Of course there were some glitches and bugs that we had so solve along the way. But we were running out of time so we couldn't get the functionality working to be able to display the saved routes/places on the map from the profile account. I just chose to clean up the input form and make it more user friendly along with changing it from Italian to English. Then I made sure the entire app was usable on mobile.</p>
+						<p>With a few minutes left, I pushed it all to heroku and we had our final app to present. We were the first to present and we were trying to get his mac to display but the adapter was broken, and when I walked away to find another, I tripped over the HDMI cable and broke it, so we had to find another. We just presented over airplay. The presentation went great, we had a small glitch where the signup took us back to the login versus the search page, but it wasn’t a big deal. Then we had enough time to show the mobile UI and ended exactly at 7 minutes. It was a huge relief to be done. Also it was nice to see everyone else's final projects. It was so cool to see all the work we accomplished in such a small amount of time. Being part of a class learning together makes the process so much more enjoyable. We learn so much from each other. I can't believe next week is our last week of classes and after that it is just two weeks to work on our own apps.</p>
 						<div class="after-post">
 							<h4>Sample Exercises:</h4>
 							<ul>
 								<li>
-									<a href="https://github.com/philipwisner/lab-typescript" target="_blank">Pair Programming - TypeScript</a>
+									<a href="http://slides.com/philipwisner/farm-voyage/fullscreen" target="_blank">Farm Voyage Slides</a>
 								</li>
 								<li>
-									<a href="https://github.com/philipwisner/lab-angular-introduction" target="_blank">Daily Exercise - Angular Intro</a>
+									<a href="https://farm-voyage.herokuapp.com/" target="_blank">Farm Voyage</a>
 								</li>
 							</ul>
 							<h4>Takeaways:</h4>
-							<p>I think I'm going to miss all this learning.</p>
-							<p class="post-end">Last week of learning, it went so fast.</p>
+							<p>Takeaways: It is almost impossible to have every feature you want implemented in one week, so it is important to define your MVP and required user stories to make sure you have a complete user flow.</p>
+							<p class="post-end">Feels so good to be done, but I'm still thinking about all the other things that need to be done.</p>
 						</div>
 					</div>
+					<div class="post">
+						<p class="date">9/21/2017</p>
+						<h3>Day 29: Database hell</h3>
+						<p>Now that we have all the routes and views of our app working and linked, the map with the core functionality added to our app, the most important part is getting all the data from the map to be stored and linked to the user. So we first started to make sure that when we saved the route, all that info was being saved into a separate collection in our database. That worked right away with no issues. Then we were able to store the userId in the route collection, but we wanted to also do the opposite, store an array of routeId's belonging to a user. This proved more difficult because we wanted to just have this happen once a user stores a route, otherwise nothing should happen.</p>
+						<p>So we wrote a method for our GoogleMapsData schema that finds the current user's id and pushes the just created route id into the user schema routes, which is an array. The method wasn't difficult to write, it was just getting it to work in the route. We had it under the save() function for saving a new route, which wasn't working. So after just looking at our code we were able to find the right place and it worked right away. After that we had to do the same thing for places, which was easy because it was basically the same thing as the routes. We decided not to link the routes and places for now, because we wouldn't have enough time to implement the features related to saved places per route.</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="http://slides.com/philipwisner/farm-voyage/fullscreen" target="_blank">Farm Voyage Slides</a>
+								</li>
+								<li>
+									<a href="https://farm-voyage.herokuapp.com/" target="_blank">Farm Voyage</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Don't wait until the last minute to deal with your database because that was the core functionality and we were cutting it very close.</p>
+							<p class="post-end">Just save the route id in the user schema…it's so simple, why won't it work?</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">9/20/2017</p>
+						<h3>Day 28: Stress fracture</h3>
+						<p>I intentionally waited a day to write this blog post because I knew it would be pointless to write it right after the day was over. Today was a normal day with getting the map into our premade app, so that we can actually use the functionality. Most of the day was just cleaning the code and restructuring the layout so everything fit.</p>
+						<p>Then before we did our practice presentation our teacher said the final presentation would be 7 minutes. I asked if it would be a hard 7 minutes or would there be a buffer. This led to a huge misunderstanding of what I was asking and turned into a debate over the point of the presentation. I originally just asked the question because the UX/UI teams had strict time limits that would cut off the presentations. As a student in the bootcamp I am interested in learning and seeing other people's work than having super formal presentations. In the end the answer was that we would have a time limit but allow people to wrap it up and not interrupt them. I think we were all just stressed and getting used to all the changes. Since the beginning of the program we have had a lot of changes in teachers, schedules etc. So we just lack clarity at time, and it's hard to communicate that.</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="http://slides.com/philipwisner/farm-voyage/fullscreen" target="_blank">Farm Voyage Slides</a>
+								</li>
+								<li>
+									<a href="https://farm-voyage.herokuapp.com/" target="_blank">Farm Voyage</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>I need to learn how to express myself better during a misunderstanding and not start to get angry or upset, just take a step back and see what is going on.</p>
+							<p class="post-end">I just asked a simple question...</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">9/19/2017</p>
+						<h3>Day 27: It's starting to come together</h3>
+						<p>So I came in today and started putting all the HTML and Sass I did into the views, and having just the main layout render the navbar, CSS and links. Then I had to make sure all the links/buttons were actually going to the correct route. For the most part they all worked, we had some spelling errors and naming errors that stopped some from working, but we got that fixed pretty quickly.</p>
+						<p>Then we had to make sure the login/signup was working. It worked pretty quickly, but the Facebook and Google logins were not working, so we just ignored that for now. Then we had to make all the profile pages hidden unless you are logged in. We just did that with the ensureloggedIn function passport provides. Gabriele then went to tweak the map and the data while I started adding the EJS to the views so that we can remove the login/sign if you are already logged in and instead show your username and a logout button. We got this working after I realized that I can't spell and that was breaking everything.</p>
+						<p>We then had a bug that was breaking our app once we were logged in. We wanted to block the landing page from being the default page when you are logged in but rather redirect to the main search page. This was creating a bunch of errors in our app, because it would try to go to the home page but it was blocked. Then we realized we had an ensureloggedin function for our home instead of ensurelogged out, so it would only show the home page if you are logged out. So by the end of the day, we could click through every option in the app, the only thing missing is the map and passing through all the data, which we should be able to take care of tomorrow, which should give a day to bug squash and actually give the app some proper styling.</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="http://slides.com/philipwisner/farm-voyage/fullscreen" target="_blank">Farm Voyage Slides</a>
+								</li>
+								<li>
+									<a href="https://farm-voyage.herokuapp.com/" target="_blank">Farm Voyage</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>So many bugs just come from basic spelling mistakes.</p>
+							<p class="post-end">Things are actually going smooth...for now.</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">9/18/2017</p>
+						<h3>Day 26: Time to <span>app</span>ly our knowledge</h3>
+						<p>Today was official the start of our project week. I worked on the wireframe and user flow over the weekend so that I could start writing all the HTML and CSS for all our views, while Gabriele worked on getting all the map functionality working. So I spent most of the first day just creating all the HTML and making sure all the layouts were working and giving them some base level responsiveness so that the sections would move responsively before we start adding all the components and the map. Then we went through the routes together to decide where each action would take you and what view and data it would have to show. I then cleaned up all the folder, files and the app.js file to make sure everything was linked and working. I also had the passport logic separate and made sure that was working. So by the end of the day we had all our basic views, the routes working, our user database working, and the map working but on a separate file.</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="http://slides.com/philipwisner/farm-voyage/fullscreen" target="_blank">Farm Voyage Slides</a>
+								</li>
+								<li>
+									<a href="https://farm-voyage.herokuapp.com/" target="_blank">Farm Voyage</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Time flies when you are just focused on one project and can invest time in it.</p>
+							<p class="post-end">I think we might actually have this app done by the end of the week.</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">9/15/2017</p>
+						<h3>Day 25: Fun in dysfunctional</h3>
+						<p>Today was definitely a Friday. The weather has been rainy and we have just been slowly going crazy. I woke up late because I was up late cooking for our Hacksdinner potluck event. I got there a half hour late and the other half of the class still hadn't shown up. So everyone else was late and just sluggish. When my partner eventually came we started going through the layout and flow of our app. He started working on the Google Maps API which is crucial to our functionality. I started setting up all the files/folders and linking and naming everything. I then started wireframing and setting up some of the routes. By then Gabriele had actually had the core functionality with Google maps working. This was amazing because I was planning for it to take days to do. This means we have much more time to focus on a clean UI and managing our databases and routes.</p>
+						<p>After that the UX/UI people had presentations we were able to attend. It was nice to finally see what they are working on, because in the future we will have to get used to working with a design team. We then got paired with a UX/UI person to work with on our app. But because we didn't even know how the flow should go, I just told her not worry too much, once we have something started she can give us feedback. After that it was time to eat and have some beers because it’s the weekend and next week is all about the project!</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="#" target="_blank">Farm Voyage Wireframes</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Working on a project with a partner is great, especially if your partner is able to solve complex things is a short amount of time.</p>
+							<p class="post-end">TGIF...it could'nt have come any sooner.</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">9/14/2017</p>
+						<h3>Day 24: Put it all together</h3>
+						<p>Today we just walked through the creation of a Kickstarter style clone. Most of it was already created so it was more looking at the existing code and taking it apart. This app is closer to what we will have to produce for our final project. The problem for me is that I can look at someone else's code and understand it, but when it comes time to create it, I find new obstacles that I don't know how to solve. I much rather just play around with some code and see what happens.</p>
+						<p>Then we went into the pair programming which was using the google maps and places API with autocomplete. This was very difficult, I was able to get the autocomplete working pretty quickly but getting it to display the search result on the map was difficult. My partner was also getting frustrated, and we need to use something similar for our project. So after some frustration he just started playing with the API related to how we need to do it for our project. I was trying to finish my Tumblr clone. I was getting the picture uploaded in the database but it was not displaying. Finally after some tweaking which was just a tiny syntax error that was ruining everything, I got it to work. Which I was happy about because being able to upload and display a picture is a useful skill that will come in handy for our project. But towards the end of the day, I just couldn't focus, we spend all day in a room together and I was getting stir crazy.</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="https://github.com/philipwisner/lab-beach-finder" target="_blank">Pair Programming - Beach Finder</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">Daily Exercise - Iron Trips</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Sometimes it's hard to focus on a small task when you know you have a bigger one looming over your head.</p>
+							<p class="post-end">I'm just going a little crazy...being here all day.</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">9/13/2017</p>
+						<h3>Day 23: Google Maps API</h3>
+						<p>Today was a mashup kind of day. We first started with google maps, which I couldn’t pay attention to the lecture. Watching someone else read prewritten code is just boring. So I just created my own maps and was playing around with the settings and styling. It was pretty easy to figure out, but we had to still sit and listen for a while even though it would've just been better to tell everyone to create a custom map, then we could've moved on.</p>
+						<p>The next part was integrating google maps with express and being able to display location data from our database using google maps. Again this was one that I couldn't just watch and pay attention to. We had to do this same thing for our pair programming, so I learned how to do it there. It was just a lot of trial and error, and reading documentation until we were able to get the markers to show up.</p>
+						<p>After we were done that, we moved onto to learning how to deploy heroku. Which wasn't too bad because if you follow all the instructions it should work, but because there are a bunch of tiny steps, that if you make one mistake somewhere it can mess it all up in the end. Overall I felt that today's lesson could've been an hour of letting us play around with google maps APIs ourselves and then ask questions.</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="https://github.com/philipwisner/lab-coffee-and-books" target="_blank">Pair Programming - Coffee &amp; Books</a>
+								</li>
+								<li>
+									<a href="https://github.com/philipwisner/lab-file-upload" target="_blank">Daily Exercise - Iron Tumblr</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Good documentation makes your life so much easier.</p>
+							<p class="post-end">Somethings just aren't meant to be taught by lecture.</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">9/12/2017</p>
+						<h3>Day 22: Back to the basics</h3>
+						<p>Today we just basically covered the overview of using AJAX requests along with using Bower, which is also now not useful, so I started using yarn and webpack instead. But AJAX is pretty straight forward now it's just back to working with static pages and JavaScript with html.</p>
+						<p>Once we got the AJAX request syntax down, it was just back to remembering  jQuery and linking everything. So for the pair programming, the hard part was using AJAX with ChartJS which was to display data from a bitcoin value API. The hardest part was using the API's URL request and then passing that data into the ChartJS data sets. To make it even worse the documentation was not very clear. But it was good practice for the real world, because the documentation is not always super detailed.</p>
+						<p>We were able to work it all out and get it working after playing around. But when it came to the daily exercise it was just using AJAX CRUD to display everything from our API database, then show/delete based off id. Also add a new item and edit it in the database. 99% of the problems arose from the syntax and typing errors. We hadn't written in jQuery or html in a while so our skills weren't as sharp.</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="https://github.com/philipwisner/lab-financial-data-graphing" target="_blank">Pair Programming - Financial Data</a>
+								</li>
+								<li>
+									<a href="https://github.com/philipwisner/lab-ajax-crud-characters" target="_blank">Daily Exercise - Character API</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Clean code, and accurate syntax prevents so many headaches.</p>
+							<p class="post-end">I never thought I would find jQuery difficult.</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">9/11/2017</p>
+						<h3>Day 21: Stuck in the middleware</h3>
+						<p>Another week and we are getting closer to the end and so much complexity is being added that it can be hard to keep track of. The foundation of everything makes sense, using routes, views and models. But the best part about express is all the middleware and that's also what can create a lot of confusion. Making sure you require and configure everything accurately in very important.</p>
+						<p>Today we started with passport to help handle login/signup instead of just creating a regular session middleware. The idea of passport was super straight forward and the social media login integration is super easy and straightforward. But what I struggled with was just writing the base strategy for an email login. We were having issues getting the errors to render, and it was just making sure that the flash error was being rendered. It's stuff like that, which trips up the whole flow that is frustrating. Because while it makes social media login super easy, I think it makes the regular log in not as easy. So it really just comes down to getting more practice and becoming comfortable with using middleware.</p>
+						<p>Now we are starting to change the view/functionality based off user type. Again the concept and logic makes sense, but when it comes down to actually writing all the code and linking it together, that's when it gets very messy to me.</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="https://github.com/philipwisner/lab-authentication-with-passport" target="_blank">Pair Programming - Passport Login</a>
+								</li>
+								<li>
+									<a href="https://github.com/philipwisner/lab-passport-roles" target="_blank">Daily Exercise - FBI Authorization</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Middleware, your best friend and worst enemy.</p>
+							<p class="post-end">How do I keep track of all of this?</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
