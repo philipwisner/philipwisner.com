@@ -101,7 +101,10 @@
 					<div class="post">
 						<p class="date">10/11/2017</p>
 						<h3>Day 43: Accepting Reality</h3>
-						<p></p>
+						<p>I woke up today in a bad mood. I think I was just so stressed about finishing my final project and the anxiety that this program ending, so I just couldn't relax. So I decided to just sleep in another hour and hope that when I woke up I'd be in a better mood, and it worked. I realized that morning that there was no way I would be able to get everything in my app I wanted done on time. Also I was just very frustrated with my design and layout, that I just felt unaccomplished and demotivated. So I just decided to finish my MVP and understand everything I created and how it works.</p>
+						<p>It's hard being around other talented people to not compare yourself to them. I look around and see all these amazing projects and I just feel like mine can be so much better. Then I remembered that I came to this bootcamp to boost my knowledge and skills, not to have the best design or to create my own startup, but rather just learn the skills I need to be an asset to any dev team or company. I can’t expect to make a complete clone of medium in two weeks. </p>
+						<p>So when I entered class today I set my mind on finishing the final step of my app, which is to see all the posts that belong to a blog, and also only see posts that belong to that blog. So I talked it out with someone, so I could see what I had to do. Because my databases were designed with zero redundancy, I had to make sure all my searches were perfect. I realized I needed to use the id of the blog I clicked on as the filter value for my GET request and then it should show all posts that belong to that blog….and viola….it actually worked.</p>
+						<p>I was so happy and proud of myself. I actually understood what I needed to do, and did it. This is when I felt much better about my app, because as long as I know what I'm doing, I don't care if my app is perfect or not. After that I went and started fixing some bugs and fixed my routing. I then decided to ask a friend to help me with the photo upload because she was able to do it. That also proved to be more difficult than expected. The way I was uploading a photo was in an edit form and the photo data wasn’t being saved in time for the form update. So I restructured the form and the function and got it to work. Then it wasn't displaying but it was because there was no directory set in the back end for static files. In the end I was able to finish it before the day was over.</p>
 						<div class="after-post">
 							<h4>Sample Exercises:</h4>
 							<ul>
@@ -114,7 +117,115 @@
 							<p class="post-end">Nervous for the future</p>
 						</div>
 					</div>
-
+					<div class="post">
+						<p class="date">10/10/2017</p>
+						<h3>Day 42: Console Cleaning</h3>
+						<p> For the first two projects and most of the bootcamp I haven't really asked the TA's or teachers for help. Mostly because I'm just a person that likes to figure stuff out myself and I realized the most valuable skill as a developer is to learn how to learn on your own. But of course, there were times that I was just stuck or had no idea, and I almost always asked a friend or partner and they could help. But because Angular is new to all of us, there are some questions that can only be answered by someone experienced. </p>
+						<p>So I had a list of bugs and errors in my console that needed addressing. So, I got the teacher to go through them all, and there were so many tiny errors that were compounding and making everything worse. As he showed me them, it became obvious what my mistakes were and that I had some things working by luck. It just goes to show that sometimes you need perspective to see your code with clarity. </p>
+						<p>Now I had blogs and posts, but I needed a way to add the post to a blog if you want. I had this with a drop down that showed all created blogs, and it was working. Now I just wanted to pass the id of the selected blog to the POST document so it would save the blog id. I was on the right track, but the teacher helped me solve it and it worked right away. It felt nice to just solve a bunch of errors at once and just clean everything up.</p>
+					<div class="after-post">
+						<h4>Sample Exercises:</h4>
+						<ul>
+							<li>
+								<a href="https://minimo.herokuapp.com/home">Minimo</a>
+							</li>
+						</ul>
+						<h4>Takeaways:</h4>
+						<p>Ask for help more often, because it can help give you clarity even if you think you understand everything.</p>
+						 <p class="post-end">I really see the value of having a team of people working on something.</p>
+					</div>
+				</div>
+					<div class="post">
+						<p class="date">10/09/2017</p>
+						<h3>Day 41: Blog Time</h3>
+						<p>
+					I did some work on the weekend, tweaking the style, creating the navbar and the left side pop out navigation menu. So, I came in Monday morning with some new components and I needed to add some extra functionality to them. I needed the side menu to change depending on if you were logged in or not. I was able to do that and have the proper links displaying easily. I then moved the logout function to navbar, so you can logout whenever you want. The biggest thing I needed to do for today was to create the blog service. It isn't much of a blogging app without the ability to create blogs and add posts to your blogs. </p>
+					<p>I updated the blog model on the backend and frontend. Then I created the blog route on the backend that was very similar to the post route. Then all I had to do on the front end was to make the Blog service with Angular to be able to do all the backend calls to my database. This wasn’t too bad, because it was very similar to everything I had already done with the posts. The only difference is that you’re able to click on blogs and see that blog in a separate page. This meant I had to pass along the blog id as a parameter so that I could get the data of that blog in the blog page. Luckily one of our learning units had an example that I was able to follow and after some tweaking I was able to get to work. The only thing was that I didn’t have a form to create a blog. So, I just created a separate form to create a blog so that I could see a list of my created blogs and be able to click on each one and see it on a separate page. </p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="https://minimo.herokuapp.com/home">Minimo</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>I should've spent more time earlier getting all the routes and services done and worry less about the components and CSS.</p>
+							 <p class="post-end">This actually isn't too bad…</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">10/06/2017</p>
+						<h3>Day 40: First part of the app down..so much more to go.</h3>
+						<p>I spent most of the week structuring my app, I thought I would have a lot of the basic functionality working by now, so that I could focus on design and flow the second week. Wrong....oh so wrong. I did not anticipate that passport and the whole login/logout would take 2 days to get working. So, my biggest focus for today was to get the form to create a post to your account working, as this is the core aspect of my app.</p>
+						<p>I started on the backend with model and everything I needed for the post. I have it structured so that the posts are a separate collection and just store the userId of the current person logged in. I then had to write the route for the post. All of this was okay because I had done it before. The hard part was Angular. Because you must create a service and then call that service in the components. Then you have to make the form in Angular using ngModels and having a handleFormSubmit function.</p>
+						<p>All this stuff isolated makes sense, but when you have to create and write in like 5 separate files just to simply add something to the database, it can be a bit overwhelming. So, after taking a while to get that all written of course I had spelling mistakes and errors that I had to go and correct. Then nothing happened. After some troubleshooting, I realized I hadn't imported the data model for user on the backend so that it wasn't adding the current user's id to their posts, and this broke everything. Nothing would be added to the database until this was fixed.</p>
+						<p>With that working I was able to display the posts in the profile that were created in the form. The issue was these posts were global, not just the ones that are part of your profile. I then had to filter the GET all posts function by userId. So, before the day was over I had the core functionality of my app working. There still is no way to add that post to a blog or see other people's posts, but I felt accomplished. Then we had to watch the UX/UI's final presentations, so I was basically done for the day at 3pm. Next week is going to be a lot of stress!</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="https://minimo.herokuapp.com/home">Minimo</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Understanding your data structure is vital, and also how that will be representing in routes.</p>
+							 <p class="post-end">Only a few more days left, and this is all over. It went by so fast. </p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">10/05/2017</p>
+						<h3>Day 39: Passport Problems</h3>
+						<p>Today I spent most of the day just being frustrated. Even though we learned the backend in a short amount of time, I felt that I was able actually understand everything. And when we did the project we had direction and an idea of what to do. Now with Angular, how we use the backend is different. It is just a web API for our data, which in concept is fine. But when we generated views in the backend it was easy to understand how to get the data and display it. Now we have to handle the routes on the backend and frontend, and they are in two different syntaxes.</p>
+						<p>Then you have to make sure your service is accurate and passed to all the components that need it. Also passport was pretty easy for me on the backend. But now that we have to pass that information to the frontend and allow Angular to know if the user is logged in or not. So I had the login/signup working but I didn’t understand how it worked. I mean I get the theory but all the code that is needed to make it work on the frontend just confuses me.</p>
+						<p>Then we had to create other functions so that when you redirect the next page would have the data it needs. Then we also had to destroy the service when the component was no longer being used. So I just felt like I had no idea what I was doing, and I was very demotivated. I love the frontend and creating beautiful functional apps, but I feel like I'm not actually using the power of Angular because I am so frustrated with passport and keeping track of if the user is signed in or not.</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="https://minimo.herokuapp.com/home">Minimo</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>I can say that I know the MEN stack, but I still need some more Angular practice to claim MEAN.</p>
+							 <p class="post-end">There has to be a better way to handle login!</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">10/04/2017</p>
+						<h3>Day 38: Time to actually code</h3>
+						<p>I spent the first two days thinking through my app, creating wireframes and organizing the files. But I hadn't actually written any code the first two days. I started the day off creating the models in the front and back end and generating all the pages, components and services I needed. I then created the welcome, login and signup pages in Angular. I had to then create the routes and link them together, and everything actually worked. </p>
+						<p>I was happy because I had three pages of my app done, but they didn't actually do anything. So then I was stuck between whether I should work on the login/signup process or start on some forms to see if I can get the data added to the database and display it with Angular. I decided to try and do the login/signup because it was very easy for me with passport on the backend with express. </p>
+						<p>I learned very quickly that it is not easy at all on Angular. I needed to have the service, then the routes and authorized routes. Then I needed to have all the passport configuration in the backend and also a way to create sessions and allow all the components of Angular to know the status of the user. Luckily our teacher created an example on GitHub for us to use, but even with that I was still getting errors. So after the day was over, a few of us stayed after and worked on it together with someone who had it working. After a few hours and some beers, the login and sign up function was working!!</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="https://minimo.herokuapp.com/home">Minimo</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Working alone now after working on a team, proves how hard it is to do a Full Stack App by yourself. We all just started working together and sharing our code because it's really the only way we can get it all done.</p>
+							 <p class="post-end">I want to work on a team!</p>
+						</div>
+					</div>
+					<div class="post">
+						<p class="date">10/04/2017</p>
+						<h3>Day 38: Time to actually code</h3>
+						<p>I spent the first two days thinking through my app, creating wireframes and organizing the files. But I hadn't actually written any code the first two days. I started the day off creating the models in the front and back end and generating all the pages, components and services I needed. I then created the welcome, login and signup pages in Angular. I had to then create the routes and link them together, and everything actually worked. </p>
+						<p>I was happy because I had three pages of my app done, but they didn't actually do anything. So then I was stuck between whether I should work on the login/signup process or start on some forms to see if I can get the data added to the database and display it with Angular. I decided to try and do the login/signup because it was very easy for me with passport on the backend with express. </p>
+						<p>I learned very quickly that it is not easy at all on Angular. I needed to have the service, then the routes and authorized routes. Then I needed to have all the passport configuration in the backend and also a way to create sessions and allow all the components of Angular to know the status of the user. Luckily our teacher created an example on GitHub for us to use, but even with that I was still getting errors. So after the day was over, a few of us stayed after and worked on it together with someone who had it working. After a few hours and some beers, the login and sign up function was working!!</p>
+						<div class="after-post">
+							<h4>Sample Exercises:</h4>
+							<ul>
+								<li>
+									<a href="https://minimo.herokuapp.com/home">Minimo</a>
+								</li>
+							</ul>
+							<h4>Takeaways:</h4>
+							<p>Working alone now after working on a team, proves how hard it is to do a Full Stack App by yourself. We all just started working together and sharing our code because it's really the only way we can get it all done.</p>
+							 <p class="post-end">Will I be able to do this all?</p>
+						</div>
+					</div>
 
 				</div>
 			</div>
