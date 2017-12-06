@@ -5,13 +5,14 @@ $lighter-color: #95989A;
 .blog {
 	margin-bottom: 10vh;
 	.blog-list {
-		max-width: 1000px;
+		max-width: 600px;
 		margin: 0 auto;
 		margin-top: 8vh;
+		text-align: center;
 		.blog-name {
 			h2 {
 				font-weight: 600;
-				@include responsive-font-size (1.7em, 2em, 350px, 1200px, 0.5em);
+				@include responsive-font-size (1.6em, 2em, 350px, 1200px, 0.5em);
 			}
 			a {
 				color: $accent-color;
@@ -22,13 +23,19 @@ $lighter-color: #95989A;
 				font-weight: 600;
 				@include responsive-font-size (1.1em, 1.5em, 350px, 1200px, 0.5em);
 			}
+			img {
+				max-width: 200px;
+				display: inline-block;
+				margin: 0 auto;
+				margin-bottom: 3vh;
+			}
 		}
 	}
 	.heading {
 		max-width: 1100px;
 		margin: 0 auto;
 		text-align: center;
-		margin-bottom: 5vh;
+		margin-bottom: 7vh;
 		background-color: $accent-color;
 		color: white;
 		padding: 15px;
@@ -47,10 +54,10 @@ $lighter-color: #95989A;
 		}
 	}
 	.posts {
-		max-width: 1000px;
+		max-width: 800px;
 		margin: 0 auto;
 		.post {
-			margin-bottom: 6vh;
+			margin-bottom: 8vh;
 			h3 {
 				font-weight: 700;
 				margin-bottom: 2vh;
@@ -58,7 +65,7 @@ $lighter-color: #95989A;
 				@include responsive-font-size (1.6em, 2.3em, 640px, 1200px, 0.5em);
 			}
 			p {
-				@include responsive-font-size (1em, 1.2em, 640px, 1200px, 0.5em);
+				@include responsive-font-size (1em, 1.3em, 640px, 1200px, 0.5em);
 				margin-bottom: 20px;
 			}
 			.date {
