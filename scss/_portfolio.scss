@@ -34,23 +34,35 @@ $lighter-color: #95989A;
 			display: inline-block;
 			@include responsive-font-size (1.8em, 2.8em, 640px, 1200px, 0.5em);
 			text-indent: 12px;
+			font-weight: 600;
 			margin-bottom: 5vh;
 		}
 		a {
 			display: inline-block;
 			margin-left: 10px;
 			color: $lighter-color;
-			font-weight: 700;
+			font-weight: 600;
 		}
 	}
 	.portfolio-item {
 		margin-bottom: 5vh;
-//		text-align: center;
+		h4 {
+			a {
+				color: black;
+				font-weight: 600;
+				font-size: 1.2em;
+			}
+			& :hover {
+			text-decoration: none;
+			color: $lighter-color;
+			}
+		}
 		img {
 			padding: 5px;
+			margin-bottom: 20px;
 		}
 		.card-text {
-			margin-top: 3vh;
+			margin-top: 10px;
 			@include responsive-font-size (.9em, 1.1em, 340px, 1200px, 0.5em);
 		}
 	}

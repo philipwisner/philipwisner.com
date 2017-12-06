@@ -4,6 +4,26 @@ $lighter-color: #95989A;
 
 .blog {
 	margin-bottom: 10vh;
+	.blog-list {
+		max-width: 1000px;
+		margin: 0 auto;
+		margin-top: 8vh;
+		.blog-name {
+			h2 {
+				font-weight: 600;
+				@include responsive-font-size (1.7em, 2em, 350px, 1200px, 0.5em);
+			}
+			a {
+				color: $accent-color;
+			}
+			p {
+				margin-bottom: 8vh;
+				color: $lighter-color;
+				font-weight: 600;
+				@include responsive-font-size (1.1em, 1.5em, 350px, 1200px, 0.5em);
+			}
+		}
+	}
 	.heading {
 		max-width: 1100px;
 		margin: 0 auto;
