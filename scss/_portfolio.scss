@@ -22,7 +22,6 @@ $lighter-color: #95989A;
 	}
 }
 
-
 .portfolio {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -47,6 +46,7 @@ $lighter-color: #95989A;
 	.portfolio-item {
 		margin-bottom: 5vh;
 		h4 {
+			text-align: center;
 			a {
 				color: black;
 				font-weight: 600;
@@ -63,7 +63,13 @@ $lighter-color: #95989A;
 		}
 		.card-text {
 			margin-top: 10px;
+			text-align: center;
 			@include responsive-font-size (.9em, 1.1em, 340px, 1200px, 0.5em);
+		}
+		.ironhack {
+			max-width: 200px;
+			margin: 0 auto;
+			margin-bottom: 25px;
 		}
 	}
 }
