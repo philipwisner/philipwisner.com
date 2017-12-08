@@ -1,0 +1,265 @@
+* {
+	box-sizing: border-box;
+	text-align: center;
+	font-family: Avenir;
+	margin: auto;
+}
+
+@font-face {
+	font-family: Avenir;
+	src: url(AvenirNextLTProBold.otf)
+}
+
+.background-image {
+	height: auto;
+	background-color: #0088ff;
+	padding-bottom: 100px;
+}
+
+.container-fluid {
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar {
+	padding: 20px 20px;
+	border-bottom: 1px solid hsla(0, 0%, 100%, 0.13);
+}
+
+.navbartext {
+	max-width: 1600px;
+}
+
+.navbar-brand {
+	width: 150px;
+	margin-left: 10px;
+}
+
+.navbar a {
+	color: white;
+}
+
+.navbar a:active {
+	color: white;
+}
+
+.navbar a:visited {
+	color: white;
+}
+
+.navbar li a:hover{
+	background-color: transparent;
+}
+
+.navbar button {
+	border-radius: 100px;
+	padding: 8px 25px;
+	color: white;
+	background-color: transparent;
+	border: 3px solid white;
+	margin-top: -10px;
+}
+
+.nav {
+	font-size: 16px;
+	color: white;
+}
+
+.top-header h1 {
+	font-size: 49px;
+	max-width: 500px;
+	margin: auto;
+	padding: 40px 0px;
+	color: white;
+}
+
+.top-header button {
+	font-size: 60px;
+	border-radius: 100px;
+	border: none;
+	background-color: white;
+	padding: 20px 120px;
+	margin-bottom: 25px;
+}
+
+.top-header h3 {
+	font-size: 29px;
+	max-width: 500px;
+	margin: auto;
+	padding: 50px 0;
+	color: white;
+}
+
+.middle {
+	height: auto;
+	overflow: hidden;
+}
+
+.middleh {
+	font-size: 30px;
+	line-height: 35px;
+	color: #333333;
+	padding: 0px 0px 0px 0px;;
+	margin: 60px 170px 40px 170px;
+}
+
+.image-row {
+	height: 350px;
+	overflow: hidden;
+}
+
+.middle img {
+	width: 195px;
+	display: inline-block;
+	padding: 0px 3px;
+	padding-bottom: 5px;
+	margin: auto;
+}
+
+img:nth-child(even) {
+	padding-top: 45px;
+}
+
+.middle button {
+	font-size: 27px;
+	line-height: 27px;
+	color: #0088ff;
+	margin-top: 40px;
+	border-radius: 100px;
+	padding: 12px 40px;
+	background-color: white;
+	border: 3px solid #0088ff;
+}
+
+.bottom {
+	height: auto;
+}
+
+.bottom h4 {
+	font-size: 30px;
+	max-width: 600px;
+	margin-bottom: 40px;
+	margin-top: 60px;
+}
+
+#collection-google {
+  color: #FFFFFF;
+	font-size: 29px;
+  background-color: #46c9f7;
+	background-image: url(present.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	width: 467px;
+	height: 354px;
+}
+
+#collection-iOS {
+  color: #222222;
+	font-size: 29px;
+  background-color: #F3F3F3;
+	background-image: url(iOS.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	width: 467px;
+	height: 354px;
+}
+
+#collection-android {
+  color: #FFFFFF;
+	font-size: 29px;
+  background-color: #22D0C1;
+	background-image: url(android.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	width: 467px;
+	height: 354px;
+}
+
+#collection-photography {
+  color: #FFFFFF;
+	font-size: 29px;
+  background-color: #243757;
+	background-image: url(photography.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	width: 467px;
+	height: 354px;
+}
+
+#collection-space {
+  color: #FFFFFF;
+	font-size: 29px;
+  background-color: #000;
+	background-image: url(space.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	width: 467px;
+	height: 354px;
+}
+
+#collection-start {
+  color: #FFFFFF;
+	font-size: 29px;
+  background-color: #48BEA3;
+	background-image: url(rocket.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	width: 467px;
+	height: 354px;
+}
+
+#applets {
+	padding-top: 50px;
+}
+
+.bottomapp {
+	display: inline-block;
+	margin: 5px 15px
+
+}
+
+.spacing {
+}
+
+
+.bottom button {
+	font-size: 27px;
+	line-height: 27px;
+	color: #FFF;
+	margin-top: 40px;
+	border-radius: 100px;
+	padding: 15px 45px;
+	background-color: #0088ff;
+	border: 3px solid #0088ff;
+	margin-bottom: 60px;
+}
+
+.footer li {
+	display: inline-block;
+	padding: 20px;
+	font-size: 18px;
+	color: #333;
+}
+
+.footer a {
+	color: #333;
+}
+
+.download-apps {
+	margin-bottom: 30px;
+}
+
+#apple {
+	width: 150px;
+	margin-right: 10px
+}
+
+#google {
+	width: 150px;
+}
