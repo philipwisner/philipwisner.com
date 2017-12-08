@@ -25,11 +25,11 @@ body {
 	align-content: center;
 	margin: 0px;
 	padding: 0px;
-	margin-right: 15px; 
+	margin-right: 15px;
 }
 
 .navbar {
-	border: 1px solid black; 
+	border: 1px solid black;
 	height: 110px;
 }
 
@@ -40,7 +40,7 @@ body {
 	font-family: "brandon-grotesque","Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 }
-	
+
 .navbar li a {
 	color: #ee6123;
 	font-size: 10pt;
@@ -52,7 +52,7 @@ body {
 li a:hover {
 	color: #ee6123;
 	font-size: 10pt;
-	border-top: 3px solid #ee6123; 
+	border-top: 3px solid #ee6123;
 	}
 
 .navbar-toggle {

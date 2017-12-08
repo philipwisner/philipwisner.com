@@ -82,5 +82,19 @@ $lighter-color: #95989A;
 		.bem {
 			max-width: 48%;
 		}
+		.spotify, .instagram {
+			padding: 18px;
+		}
+		.pitchfork {
+			padding: 18px;
+			max-width: 90%;
+			margin-top: 20px;
+			margin-bottom: 15px;
+		}
+		.bitly {
+			max-width: 80%;
+			padding: 15px;
+			margin-bottom: -5px;
+		}
 	}
 }
