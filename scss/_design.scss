@@ -4,21 +4,11 @@ $lighter-color: #95989A;
 
 @media screen and (min-width: 0px) and (max-width: 765px) {
 	.design {
-		.category {
-			h2 {
-				margin-bottom: 0;
-			}
-		}
 	}
 }
 
 @media screen and (min-width: 766px) and (max-width: 5000px) {
 	.design {
-		.category {
-			h2 {
-				margin-bottom: 4vh;
-			}
-		}
 	}
 }
 
@@ -34,6 +24,7 @@ $lighter-color: #95989A;
 			@include responsive-font-size (1.8em, 2.8em, 640px, 1200px, 0.5em);
 			text-indent: 12px;
 			font-weight: 600;
+			margin-bottom: 4vh;
 		}
 		a {
 			display: inline-block;
@@ -64,6 +55,11 @@ $lighter-color: #95989A;
 			margin-top: 10px;
 			text-align: center;
 			@include responsive-font-size (.9em, 1.1em, 340px, 1200px, 0.5em);
+		}
+		.myicon {
+			max-width: 65%;
+			padding: 0px 10px 20px 10px;
+			margin: 0 auto;
 		}
 	}
 }
