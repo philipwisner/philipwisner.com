@@ -115,4 +115,13 @@ $lighter-color: #95989A;
 	hr {
 		margin-bottom: 8vh;
 	}
+	a {
+		color: $accent-color;
+		text-decoration: none;
+		&:hover {
+			color: $accent-color;
+			font-weight: 700;
+			text-decoration: none;
+		}
+	}
 }
