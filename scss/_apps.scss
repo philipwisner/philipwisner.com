@@ -1,15 +1,9 @@
+@import "responsive-font-size";
 $accent-color: #1845AD;
 $lighter-color: #95989A;
 
 @media screen and (min-width: 0px) and (max-width: 1360px) {
 	.apps {
-		button {
-			padding: 4px 25px;
-			margin-top: 2vh;
-			margin-right: 10px;
-			margin-left: 10px;
-			margin-bottom: 10px;
-		}
 		.app {
 			img {
 				margin: 0 auto;
@@ -33,69 +27,83 @@ $lighter-color: #95989A;
 				}
 			}
 		}
+		button {
+			margin: 2vh 10px 10px 10px;
+		}
 	}
 }
 
 @media screen and (min-width: 1361px) and (max-width: 5000px) {
 	.apps {
-		button {
-			padding: 4px 25px;
-			margin-right: 20px;
-			margin-top: 4vh;
+		.app {
+			height: 485px;
+			img {
+				float: left;
+				margin: 0 auto;
+				max-width: 450px;
+				margin-bottom: 6vh;
+				margin-top: 2vh;
+			}
+			.screenshot {
+				float: right;
+				max-width: 250px;
+				margin: 0 auto;
+				margin-bottom: 4vh;
+			}
+			.app-content {
+				float: left;
+				max-width: 700px;
+				p {
+					margin-bottom: 5vh;
+				}
+			}
 		}
-		.farm-voyage {
+		button {
+			margin: 4vh 20px 0 0;
+		}
+		hr {
+			display: none;
+		}
+		#farm-voyage {
 			img {
 				float: right;
 				max-width: 450px;
 				margin-bottom: 6vh;
 				margin-top: 2vh;
 			}
+			#farm-voyage-logo {
+				position: relative;
+				left: -290px;
+			}
 			.screenshot {
 				float: left;
 				max-width: 250px;
 				margin-bottom: 4vh;
+				margin-left: -20px;
 			}
-		}
-		hr {
-			display: none;
-		}
-		img {
-			float: left;
-			margin: 0 auto;
-			max-width: 450px;
-			margin-bottom: 6vh;
-			margin-top: 2vh;
-		}
-		.screenshot {
-			float: right;
-			max-width: 250px;
-			margin: 0 auto;
-			margin-bottom: 4vh;
-		}
-		.app-content {
-			float: left;
-			max-width: 700px;
-			p {
-				margin-bottom: 5vh;
+			.app-content {
+				margin-left: 60px;
 			}
 		}
 	}
 }
 
-
 .apps {
 	max-width: 1050px;
 	margin: 0 auto;
 	margin-bottom: 10vh;
-	hr {
-		margin-bottom: 8vh;
-	}
 	.app {
 		margin-bottom: 8vh;
+		.app-content {
+			p {
+				@include responsive-font-size (1em, 1.5em, 340px, 1200px, 0.3em);
+			}
+		}
 	}
 	button {
 		color: black;
 		@include responsive-font-size (.9em, 1.3em, 340px, 1200px, 0.5em);
+		padding: 4px 25px;
 		border: 1px solid black;
 		background-color: white;
 		border-radius: 50px;
@@ -104,11 +112,7 @@ $lighter-color: #95989A;
 			background-color: black;
 		}
 	}
-	.app {
-		.app-content {
-			p {
-				@include responsive-font-size (1em, 1.5em, 340px, 1200px, 0.3em);
-			}
-		}
+	hr {
+		margin-bottom: 8vh;
 	}
 }
