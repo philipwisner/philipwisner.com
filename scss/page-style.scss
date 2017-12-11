@@ -19,9 +19,22 @@ $lighter-color: #95989A;
 	font-family: 'Open Sans', sans-serif;
 }
 
+@media (pointer: fine) {
+  #side-nav {
+    display: none;
+  }
+  #toggle {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 0px) and (max-width: 765px) {
-	#side-nav { display: none; }
-	#toggle { display: block; }
+	#side-nav {
+		display: none;
+	}
+	#toggle {
+		display: block;
+	}
 }
 
 @media screen and (min-width: 766px) and (max-width: 5000px) {
