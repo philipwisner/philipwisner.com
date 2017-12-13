@@ -19,14 +19,13 @@ $lighter-color: #95989A;
 	font-family: 'Open Sans', sans-serif;
 }
 
-@media (pointer: fine) {
-  #side-nav {
-    display: none;
-  }
-  #toggle {
-    display: block;
-  }
+
+@media (hover:none), (hover:on-demand) {
+	#toggle:hover {
+		cursor: none;
+	}
 }
+
 
 @media screen and (min-width: 0px) and (max-width: 765px) {
 	#side-nav {
@@ -52,6 +51,9 @@ $lighter-color: #95989A;
 	}
 }
 
+.display {
+	display: block;
+}
 
 #active {
 	color: $accent-color;
@@ -68,10 +70,12 @@ $lighter-color: #95989A;
 	border: none;
 	background-color: $accent-color;
 	border-radius: 100px;
-	height: 30px;
-	width: 30px;
+	height: 35px;
+	width: 35px;
 	color: white;
 	font-weight: 700;
+	position: relative;
+	z-index: 2;
 }
 
 .side-bar {

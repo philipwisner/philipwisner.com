@@ -6,6 +6,29 @@ $lighter-color: #95989A;
 	.skills {
 		img {
 			max-width: 50px;
+			height: auto;
+		}
+		.sass, .node, .react, .vue, .python, .ruby, .java, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .d3, .figma, .net, .portuguese {
+			width: 10rem;
+		}
+		.express {
+			width: 4.5rem;
+		}
+		.redux, .csharp, .backbone {
+			width: 9.5rem;
+		}
+		.go {
+			width: 4rem;
+		}
+		.spanish {
+			width: 8.2rem;
+		}
+		.italian {
+			width: 3.5rem;
+		}
+		.php {
+			width: 10rem;
+			padding-bottom: 10px;
 		}
 	}
 }
@@ -15,6 +38,29 @@ $lighter-color: #95989A;
 	.skills {
 		img {
 			max-width: 100px;
+			height: auto;
+		}
+		.sass, .node, .react, .vue, .python, .ruby, .java, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .d3, .figma, .net, .portuguese {
+			width: 10rem;
+		}
+		.express {
+			width: 8.5rem;
+		}
+		.redux, .csharp, .backbone {
+			width: 9.5rem;
+		}
+		.go {
+			width: 7rem;
+		}
+		.spanish {
+			width: 8.2rem;
+		}
+		.italian {
+			width: 6rem;
+		}
+		.php {
+			width: 10rem;
+			padding-bottom: 15px;
 		}
 	}
 }
@@ -52,26 +98,26 @@ $lighter-color: #95989A;
 		margin-bottom: 1vh;
 		font-size: 16px;
 	}
-	.sass, .node, .react, .vue, .python, .ruby, .java, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .d3, .figma, .net, .portuguese {
-		width: 100%;
-	}
-	.express {
-		width: 85%;
-	}
-	.redux, .csharp, .backbone {
-		width: 95%;
-	}
-	.go {
-		width: 70%;
-	}
-	.spanish {
-		width: 82%;
-	}
-	.italian {
-		width: 60%;
-	}
-	.php {
-		width: 100%;
-		padding-bottom: 15px;
-	}
+//	.sass, .node, .react, .vue, .python, .ruby, .java, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .d3, .figma, .net, .portuguese {
+//		width: 10rem;
+//	}
+//	.express {
+//		width: 8.5rem;
+//	}
+//	.redux, .csharp, .backbone {
+//		width: 9.5rem;
+//	}
+//	.go {
+//		width: 7rem;
+//	}
+//	.spanish {
+//		width: 8.2rem;
+//	}
+//	.italian {
+//		width: 6rem;
+//	}
+//	.php {
+//		width: 10rem;
+//		padding-bottom: 15px;
+//	}
 }
