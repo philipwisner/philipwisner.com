@@ -13,7 +13,7 @@
 * Check out my personal website [here](http://philipwisner.com)
 
 ## Development
-* I used Figma to create my wireframes and protoype [here](https://www.figmaom/proto/TMQVcGsKrzKSEVduRJeW2Tae/philipwisner.com?scaling=contain&node-id=1%3A500).
+* I used Figma to create my wireframes and protoype [here](https://www.figma.com/proto/TMQVcGsKrzKSEVduRJeW2Tae/philipwisner.com?scaling=contain&node-id=1%3A500&redirected=1).
 * I used Sass to do all my styling
 * Many, many media queries to make the website as responsive as possible
 * Fixed a lot of display issues in Firefox, Edge and Internet Explorer
