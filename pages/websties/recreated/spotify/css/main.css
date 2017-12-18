@@ -8,10 +8,16 @@ White: #FFF
 */
 
 @media screen and (min-width: 0px) and (max-width: 765px) {
+	.nav-logo {
+		width: 125px;
+		top: 5px;
+  	left: -25px;
+	}
 	.bottom-info {
 		background-color: #00B172;
+		background-image: none;
 		color: white;
-		padding-bottom: 40px;
+		padding: 0 0 40px 0;
 		text-align: left;
 		display: flex;
 		flex-direction: row;
@@ -20,9 +26,17 @@ White: #FFF
 		align-content: center;
 		align-items: center;
 	}
+	#nav-item {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 766px) and (max-width: 20000px) {
+	.nav-logo {
+		width: 175px;
+		top: -6px;
+  	left: -25px;
+	}
 	.bottom-info {
 		background-color: #00B172;
 		background-image: url("../images/spotify-icon-white.png");
@@ -62,21 +76,18 @@ body {
 }
 
 .nav-logo {
-  width: 175px;
   margin: 0 0 0 40px;
   padding: 0;
   position: absolute;
-  top: -6px;
-  left: -25px;
 }
 
 .navbar li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  right: -0px;
+	display: inline-block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	right: -0px;
 }
 
 .navbar li:first-child {
