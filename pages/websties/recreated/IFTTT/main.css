@@ -29,6 +29,57 @@
 	.navbar-right {
 		display: none;
 	}
+	.middleh {
+		font-size: 25px;
+		line-height: 35px;
+		padding: 0 10px;
+		margin: 40px 0;
+	}
+	.middle button {
+		font-size: 25px;
+		line-height: 27px;
+		margin-top: 10px;
+		border-radius: 100px;
+		padding: 12px 30px;
+	}
+	.bottom h4 {
+		font-size: 25px;
+		margin: 40px 0;
+		padding: 0 15px
+	}
+	#collection-google {
+		font-size: 25px;
+		width: 320px;
+		height: 300px;
+	}
+	#collection-iOS {
+		font-size: 25px;
+		width: 320px;
+		height: 300px;
+	}
+	#collection-android {
+		font-size: 25px;
+		width: 320px;
+		height: 300px;
+	}
+	#collection-photography {
+		font-size: 25px;
+		width: 320px;
+		height: 300px;
+	}
+	#collection-space {
+		font-size: 25px;
+		width: 320px;
+		height: 300px;
+	}
+	#collection-start {
+		font-size: 25px;
+		width: 320px;
+		height: 300px;
+	}
+	.footer {
+		display: none
+	}
 }
 
 @media screen and (min-width: 766px) and (max-width: 5000px) {
@@ -53,6 +104,54 @@
 	.navbar-brand {
 		width: 150px;
 		margin-left: 10px;
+	}
+	.middleh {
+		font-size: 30px;
+		line-height: 35px;
+		padding: 0;
+		margin: 60px 170px 40px 170px;
+	}
+	.middle button {
+		font-size: 27px;
+		line-height: 27px;
+		margin-top: 40px;
+		border-radius: 100px;
+		padding: 12px 40px;
+	}
+	.bottom h4 {
+		font-size: 30px;
+		margin-bottom: 40px;
+		margin-top: 60px;
+	}
+	#collection-google {
+		font-size: 29px;
+		width: 467px;
+		height: 354px;
+	}
+	#collection-iOS {
+		font-size: 29px;
+		width: 467px;
+		height: 354px;
+	}
+	#collection-android {
+		font-size: 29px;
+		width: 467px;
+		height: 354px;
+	}
+	#collection-photography {
+		font-size: 29px;
+		width: 467px;
+		height: 354px;
+	}
+	#collection-space {
+		font-size: 29px;
+		width: 467px;
+		height: 354px;
+	}
+	#collection-start {
+		font-size: 29px;
+		width: 467px;
+		height: 354px;
 	}
 }
 
@@ -134,15 +233,11 @@
 }
 
 .middleh {
-	font-size: 30px;
-	line-height: 35px;
 	color: #333333;
-	padding: 0px 0px 0px 0px;;
-	margin: 60px 170px 40px 170px;
 }
 
 .image-row {
-	height: 350px;
+	height: 346px;
 	overflow: hidden;
 }
 
@@ -158,13 +253,13 @@ img:nth-child(even) {
 	padding-top: 45px;
 }
 
+.bottom {
+	height: auto;
+}
+
+
 .middle button {
-	font-size: 27px;
-	line-height: 27px;
 	color: #0088ff;
-	margin-top: 40px;
-	border-radius: 100px;
-	padding: 12px 40px;
 	background-color: white;
 	border: 3px solid #0088ff;
 }
@@ -174,82 +269,61 @@ img:nth-child(even) {
 }
 
 .bottom h4 {
-	font-size: 30px;
 	max-width: 600px;
-	margin-bottom: 40px;
-	margin-top: 60px;
 }
 
 #collection-google {
   color: #FFFFFF;
-	font-size: 29px;
   background-color: #46c9f7;
 	background-image: url(present.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	width: 467px;
-	height: 354px;
 }
 
 #collection-iOS {
   color: #222222;
-	font-size: 29px;
   background-color: #F3F3F3;
 	background-image: url(iOS.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	width: 467px;
-	height: 354px;
 }
 
 #collection-android {
   color: #FFFFFF;
-	font-size: 29px;
   background-color: #22D0C1;
 	background-image: url(android.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	width: 467px;
-	height: 354px;
 }
 
 #collection-photography {
   color: #FFFFFF;
-	font-size: 29px;
   background-color: #243757;
 	background-image: url(photography.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	width: 467px;
-	height: 354px;
 }
 
 #collection-space {
   color: #FFFFFF;
-	font-size: 29px;
   background-color: #000;
 	background-image: url(space.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	width: 467px;
-	height: 354px;
 }
 
 #collection-start {
   color: #FFFFFF;
-	font-size: 29px;
   background-color: #48BEA3;
 	background-image: url(rocket.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	width: 467px;
-	height: 354px;
 }
 
 #applets {
@@ -263,6 +337,7 @@ img:nth-child(even) {
 }
 
 .spacing {
+	margin: 0 auto;
 }
 
 
