@@ -44,38 +44,42 @@
 	}
 	.bottom h4 {
 		font-size: 25px;
-		margin: 40px 0;
-		padding: 0 15px
+		margin: 40px auto;
+		padding: 0 15px;
 	}
 	#collection-google {
-		font-size: 25px;
-		width: 320px;
-		height: 300px;
+		font-size: 22px;
+		width: 280px;
+		height: 250px;
+		margin-bottom: 10px;
 	}
 	#collection-iOS {
-		font-size: 25px;
-		width: 320px;
-		height: 300px;
+		font-size: 22px;
+		width: 280px;
+		height: 250px;
+				margin-bottom: 10px;
 	}
 	#collection-android {
-		font-size: 25px;
-		width: 320px;
-		height: 300px;
+		font-size: 22px;
+		width: 280px;
+		height: 250px;
 	}
 	#collection-photography {
-		font-size: 25px;
-		width: 320px;
-		height: 300px;
+		font-size: 22px;
+		width: 280px;
+		height: 250px;
+		margin-bottom: 10px;
 	}
 	#collection-space {
-		font-size: 25px;
-		width: 320px;
-		height: 300px;
+		font-size: 22px;
+		width: 280px;
+		height: 250px;
+		margin-bottom: 10px;
 	}
 	#collection-start {
-		font-size: 25px;
-		width: 320px;
-		height: 300px;
+		font-size: 22px;
+		width: 280px;
+		height: 250px;
 	}
 	.footer {
 		display: none
@@ -338,6 +342,7 @@ img:nth-child(even) {
 
 .spacing {
 	margin: 0 auto;
+	padding: 0;
 }
 
 
