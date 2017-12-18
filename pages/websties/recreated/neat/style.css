@@ -1,6 +1,6 @@
 * {
 	font-family: 'Segoe UI';
-	font-size: 15px;
+	font-size: 14px;
 	box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@
 .navbar {
 	margin: 0px auto;
 	padding: 0px 20px;
-	max-width: 1558px;
+	max-width: 1400px;
 }
 
 .navbar a {
@@ -46,7 +46,7 @@
 }
 
 .navbar-nav li a {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
 	color: black;
 	padding-left: 20px;
@@ -59,7 +59,7 @@
 
 #neat {
 	font-family: Artifika;
-	font-size: 55px;
+	font-size: 53px;
 	margin: 0;
 	padding: 0px;
 	line-height: 60px;
@@ -71,8 +71,9 @@
 	text-indent: 2px;
 }
 
-.subh {
-	font-size: 59px;
+#subh {
+	font-size: 49px;
+	line-height: 59px;
 	color: #333333;
 	margin-bottom: 30px;
 }
@@ -101,23 +102,47 @@
 }
 
 .list {
-	margin-top: 25px;
+	margin-top: 20px;
 	padding-left: 20px;
 }
 
 .list li {
-	font-size: 16px;
-	line-height: 30px;
+	font-size: 15px;
 }
 
-p code {
-	background-color: rgba(0, 0, 0, 0.06);
-	border-radius: 3px;
-	padding: 0.2em 0;
-	white-space: nowrap;
-  font-family: "Anonymous Pro", "Consolas", "monaco", monospace;
-	word-break: keep-all;
-	color: rgb(51, 51, 51);
+.starter-template {
+	max-width: 650px;
+}
+
+
+.starter-template h1 {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.starter-template p {
+	margin-bottom: 30px;
+	font-size: 15px;
+	font-family: 'Segoe UI';
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.starter-template img {
+	margin-bottom: 20px;
+	box-shadow: 0 0 0 3px #eee;
+	border: rgb(204, 204, 204);
+}
+
+.emoji {
+	font-size: 28px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.emoji2 {
+	font-size: 25px;
+	display: inline-block;
 }
 
 .container {
@@ -139,15 +164,15 @@ h1 {
 }
 
 .footer {
-	margin-top: 100px;
-	padding-top: 78px;
+	margin-top: 80px;
+	padding-top: 58px;
 	border-top: 5px solid #00d4ff;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 .footer p,a {
-	font-size: 17px;
-	line-height: 40px;
+	font-size: 15px;
+	line-height: 30px;
 }
 
 a {
