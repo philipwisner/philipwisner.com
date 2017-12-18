@@ -1,3 +1,88 @@
+@media screen and (min-width: 0px) and (max-width: 765px) {
+	.navbar-collapse {
+		background-color: rgba(22,22,55,.5);
+	}
+	.logoimg {
+		margin-top: 25px;
+		width: 200px;
+	}
+	.hintro {
+		font-size: 45px;
+		line-height: 90px;
+	}
+	.tintro {
+		font-size: 23px;
+	}
+	.naming {
+		margin-bottom: 10px;
+		padding: 20px 20px 100px 20px;
+	}
+	.hnaming {
+		font-size: 45px;
+		line-height: 90px;
+	}
+	.tnaming {
+		font-size: 23px;
+	}
+	.FAQ {
+		margin-bottom: 10px;
+		padding: 20px 20px 130px 20px;
+	}
+	.hFAQ {
+		font-size: 45px;
+		line-height: 90px;
+	}
+	.tFAQ {
+		font-size: 23px;
+	}
+	.hcompanies {
+		font-size: 45px;
+		line-height: 55px;
+	}
+}
+
+@media screen and (min-width: 766px) and (max-width: 5000px) {
+	.logoimg {
+		margin-top: 20px;
+		width: 300px;
+	}
+	.hintro {
+		font-size: 72px;
+		line-height: 90px;
+	}
+	.tintro {
+		font-size: 28px;
+	}
+	.naming {
+		margin-bottom: 10px;
+		padding: 20px 20px 100px 20px;
+	}
+	.hnaming {
+		font-size: 72px;
+		line-height: 90px;
+	}
+	.tnaming {
+		font-size: 28px;
+	}
+	.FAQ {
+		margin-bottom: 10px;
+		padding: 20px 20px 130px 20px;
+	}
+	.hFAQ {
+		font-size: 72px;
+		line-height: 90px;
+	}
+	.tFAQ {
+		font-size: 28px;
+	}
+	.hcompanies {
+		font-size: 78px;
+		line-height: 90px;
+	}
+}
+
+
+
 * {
 	box-sizing: border-box;
 }
@@ -84,22 +169,22 @@ body {
 	margin: 0 auto;
 	height: 420px;
 	padding: 0;
-	background-image: url(https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg);
+	background-image: url(transparent.jpg);
 	background-size: cover;
 	background-origin: border-box;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.logoimg {
-	margin-top: 35px;
-	width: 300px;
-}
 
 .header {
 	padding: 55px;
 	color: white;
 	text-align: center;
+}
+
+.icon-bar {
+	background-color: white;
 }
 
 .top-header {
@@ -175,8 +260,6 @@ body {
 }
 
 .hintro {
-	font-size: 72px;
-	line-height: 90px;
 	font-weight: 300;
 	text-align: left;
 	max-width:800px;
@@ -184,7 +267,6 @@ body {
 }
 
 .tintro {
-	font-size: 28px;
 	text-align: left;
 	max-width: 900px;
 	margin: auto;
@@ -195,13 +277,9 @@ body {
 	color: #fff;
 	height: auto;
 	margin: auto;
-	margin-bottom: 10px;
-	padding: 20px 20px 100px 20px;
 }
 
 .hnaming {
-	font-size: 72px;
-	line-height: 90px;
 	font-weight: 300;
 	text-align: right;
 	max-width: 850px;
@@ -220,13 +298,9 @@ body {
 	color: #fff;
 	height: auto;
 	margin: auto;
-	margin-bottom: 10px;
-	padding: 20px 20px 130px 20px;
 }
 
 .hFAQ {
-	font-size: 72px;
-	line-height: 90px;
 	font-weight: 300;
 	text-align: left;
 	max-width: 900px;
@@ -234,7 +308,6 @@ body {
 }
 
 .tFAQ {
-	font-size: 28px;
 	text-align: left;
 	max-width: 900px;
 	margin: auto;
@@ -242,9 +315,7 @@ body {
 
 /*Companies*/
 .hcompanies {
-	font-size: 78px;
 	font-weight: 300;
-	line-height: 90px;
 	color: #eee;
 	margin-top: 5px;
 	margin-bottom: 70px;
