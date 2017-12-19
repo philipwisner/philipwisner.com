@@ -9,6 +9,87 @@
 	font-family: 'Artifika', serif;
 }
 
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+	.card-table {
+		width: 300px;
+		margin: -2px;
+	}
+	.card {
+		width: 295px;
+	}
+	.card h4 {
+		margin-left: 0px;
+	}
+	.card p {
+		margin-left: 0px;
+		max-width: 220px;
+	}
+	.starter-template .card .small {
+		margin-bottom: 10px;
+		line-height: 18px;
+	}
+	.navbar-right {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+	.card-table {
+		width: 350px;
+		margin-left: -2px;
+	}
+	.card {
+		width: 350px;
+	}
+	.card h4 {
+		margin-left: 0px;
+	}
+	.card p {
+		margin-left: 0px;
+		margin-bottom: 25px;
+		max-width: 260px;
+	}
+	.starter-template .card .small {
+		margin-bottom: 10px;
+		line-height: 18px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	.card-table {
+		width: 650px;
+	}
+	.card {
+		width: 415px;
+	}
+	.card h4 {
+		margin-left: 20px;
+	}
+	.card p {
+		margin-left: 20px;
+		margin-bottom: 25px;
+	}
+}
+
+@media screen and (min-width: 1201px) and (max-width: 5000px) {
+	.card-table {
+		width: 870px;
+	}
+	.card {
+		width: 415px;
+	}
+	.card h4 {
+		margin-left: 20px;
+	}
+	.card p {
+		margin-left: 20px;
+		margin-bottom: 25px;
+	}
+}
+
+
+
 .navbar {
 	margin: 0px auto;
 	padding: 0px 20px;
@@ -56,6 +137,7 @@
 	margin-top: 150px;
 	max-width: 1000px;
 }
+
 
 #neat {
 	font-family: Artifika;
@@ -151,6 +233,67 @@
 	max-width: 1000px;
 }
 
+.card {
+	border: 1px solid rgb(204, 204, 204);
+	border-radius: 3px;
+	box-shadow: 0 0 0 1px #eee;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	position: relative;
+}
+
+.card img {
+	max-width: 22px;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-right: 5px;
+}
+
+.card h4 {
+	font-family: 'Artifika', serif;
+	margin-top: 25px;
+	margin-bottom: 3px;
+}
+
+.card p {
+	color: rgb(153, 153, 153);
+	font-weight: 100;
+	font-size: 13px;
+}
+
+
+.top {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 60px;
+	border-left: 1px solid rgb(204, 204, 204);
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+
+.bottom {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 60px;
+	border-left: 1px solid rgb(204, 204, 204);
+}
+
+.card-side .heading {
+	margin-bottom: 0;
+	font-size: 12px;
+	text-align: center;
+	margin-left: 0;
+}
+
+.card-side .number {
+	color: black;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 0;
+	margin-left: 0;
+}
 
 .lead {
 	font-size: 18px;
