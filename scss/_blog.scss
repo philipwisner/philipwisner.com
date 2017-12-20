@@ -16,6 +16,10 @@ $lighter-color: #95989A;
 			}
 			a {
 				color: $accent-color;
+				&:hover {
+					text-decoration: none;
+					font-weight: 700;
+				}
 			}
 			p {
 				margin-bottom: 8vh;
@@ -91,6 +95,17 @@ $lighter-color: #95989A;
 		li a {
 			@include responsive-font-size (1em, 1.2em, 640px, 1200px, 0.5em);
 			color: $accent-color;
+			&:hover {
+				text-decoration: none;
+				font-weight: 700;
+			}
+		}
+		a {
+			color: $accent-color;
+			&:hover {
+				text-decoration: none;
+				font-weight: 700;
+			}
 		}
 		.post-end {
 			margin-top: 35px;
