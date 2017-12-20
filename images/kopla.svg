@@ -1,27 +1,30 @@
 <svg width="700" height="400" viewBox="0 0 700 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Frame 2</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-2968 280)">
+<g id="Canvas" transform="translate(-2048 496)">
 <clipPath id="clip-0" clip-rule="evenodd">
-<path d="M 2968 -280L 3668 -280L 3668 120L 2968 120L 2968 -280Z" fill="#FFFFFF"/>
+<path d="M 2048 -496L 2748 -496L 2748 -96L 2048 -96L 2048 -496Z" fill="#FFFFFF"/>
 </clipPath>
 <g id="Frame 2" clip-path="url(#clip-0)">
-<path d="M 2968 -280L 3668 -280L 3668 120L 2968 120L 2968 -280Z" fill="#FFFFFF"/>
+<path d="M 2048 -496L 2748 -496L 2748 -96L 2048 -96L 2048 -496Z" fill="#FFFFFF"/>
 <g id="Group 2">
 <g id="opla">
-<use xlink:href="#path0_fill" transform="translate(3191.39 -238)" fill="#27AE60"/>
+<use xlink:href="#path0_fill" transform="translate(2271.39 -437)" fill="#27AE60"/>
 </g>
 <g id="Group 2.1">
 <g id=".">
-<use xlink:href="#path1_fill" transform="translate(3172.79 -193.333)" fill="#27AE60"/>
+<use xlink:href="#path1_fill" transform="translate(2252.79 -392.333)" fill="#27AE60"/>
 </g>
 <g id="Line 2.1">
-<use xlink:href="#path2_stroke" transform="matrix(1 -2.4509e-16 2.44769e-16 1 3500.13 22.5555)" fill="#FFFFFF"/>
+<use xlink:href="#path2_stroke" transform="matrix(1 -2.4509e-16 2.44769e-16 1 2580.13 -176.444)" fill="#FFFFFF"/>
 </g>
 <g id="K">
-<use xlink:href="#path3_fill" transform="translate(3024 -230.556)" fill="#27AE60"/>
+<use xlink:href="#path3_fill" transform="translate(2104 -429.556)" fill="#27AE60"/>
 </g>
 </g>
+</g>
+<g id="Line">
+<use xlink:href="#path4_stroke" transform="translate(2585 -188)" fill="#27AE60"/>
 </g>
 </g>
 </g>
@@ -30,5 +33,6 @@
 <path id="path1_fill" d="M 56.99 126.637C 56.99 121.294 58.437 117.064 61.3311 113.948C 64.4479 110.831 68.6777 109.272 74.0207 109.272C 79.1411 109.272 83.1483 110.831 86.0424 113.948C 89.1591 116.842 90.7175 120.849 90.7175 125.969C 90.7175 131.312 89.1591 135.542 86.0424 138.659C 82.9257 141.553 78.6958 143 73.3528 143C 68.2325 143 64.2252 141.553 61.3311 138.659C 58.437 135.542 56.99 131.535 56.99 126.637Z"/>
 <path id="path2_stroke" d="M 0 0L 96.7143 0L 96.7143 -14.884L 0 -14.884L 0 0Z"/>
 <path id="path3_fill" d="M 171.739 230.322L 171.739 250L 107.337 250L 107.337 230.322L 122.721 230.322L 46.5125 153.039L 125.942 76.4725L 107.337 76.4725L 107.337 56.7942L 171.739 56.7942L 171.739 76.4725L 152.418 76.4725L 74.7778 151.25L 152.776 230.322L 171.739 230.322ZM 0 230.322L 21.4673 230.322L 21.4673 76.4725L 0 76.4725L 0 56.7942L 64.4019 56.7942L 64.4019 76.4725L 42.9346 76.4725L 42.9346 230.322L 64.4019 230.322L 64.4019 250L 0 250L 0 230.322Z"/>
+<path id="path4_stroke" d="M 0 0L 94 0L 94 -10L 0 -10L 0 0Z"/>
 </defs>
 </svg>
