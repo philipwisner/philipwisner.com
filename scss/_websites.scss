@@ -99,5 +99,14 @@ $lighter-color: #95989A;
 			padding: 15px;
 			margin-bottom: -5px;
 		}
+		p {
+			a {
+				color: $accent-color;
+				&:hover {
+					font-weight: 700;
+					text-decoration: none;
+				}
+			}
+		}
 	}
 }
