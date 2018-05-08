@@ -65,6 +65,12 @@ $lighter-color: #95989A;
 			margin-top: 10px;
 			text-align: center;
 			@include responsive-font-size (.9em, 1.1em, 340px, 1200px, 0.5em);
+            a {
+                color: $accent-color;
+            } & :hover {
+                text-decoration: none;
+                font-weight: 600;
+            }
 		}
 		.ironhack {
 			max-width: 200px;
