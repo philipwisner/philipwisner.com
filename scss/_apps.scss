@@ -26,6 +26,9 @@ $lighter-color: #95989A;
 					text-align: center;
 				}
 			}
+            #diti-logo {
+                max-width: 280px;
+            }
 		}
 		button {
 			margin: 2vh 10px 10px 10px;
@@ -71,6 +74,29 @@ $lighter-color: #95989A;
 			#farm-voyage-logo {
 				position: relative;
 				left: -290px;
+			}
+			.screenshot {
+				float: left;
+				max-width: 250px;
+				margin-bottom: 4vh;
+				margin-left: -20px;
+			}
+			.app-content {
+				margin-left: 60px;
+			}
+		}
+		#diti {
+			margin-bottom: 200px;
+            img {
+				float: right;
+				max-width: 450px;
+				margin-bottom: 6vh;
+				margin-top: 2vh;
+			}
+			#diti-logo {
+				position: relative;
+				left: -450px;
+                max-width: 300px;
 			}
 			.screenshot {
 				float: left;
