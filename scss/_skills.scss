@@ -43,13 +43,17 @@ $lighter-color: #95989A;
 			max-width: 100px;
 			height: auto;
 		}
-		.sass, .node, .react, .vue, .python, .ruby, .java, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .d3, .figma, .net, .portuguese {
+		.sass, .node, .react, .vue, .python, .ruby, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .figma, .net, .portuguese {
 			width: 10rem;
 		}
 		.express {
 			width: 8.5rem;
 		}
-		.redux, .csharp, .backbone, .graphQL {
+		.polymer {
+			width: 10rem;
+			margin-bottom: 30px;
+		}
+		.redux, .csharp, .backbone, .graphQL, .d3, .electron {
 			width: 9.5rem;
 		}
 		.go {
@@ -72,11 +76,15 @@ $lighter-color: #95989A;
 			width: 11rem;
 			margin-bottom: 40px;
 		}
-		.azure {
+		.azure, .java {
 			width: 10rem;
 			margin-bottom: 10px;
 		}
 		.redis {
+			width: 10rem;
+			margin-bottom: 20px;
+		}
+		.swift {
 			width: 10rem;
 			margin-bottom: 20px;
 		}
