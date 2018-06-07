@@ -8,7 +8,7 @@ $lighter-color: #95989A;
 			max-width: 50px;
 			height: auto;
 		}
-		.sass, .node, .react, .vue, .python, .ruby, .java, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .d3, .figma, .net, .portuguese {
+		.redis, .sass, .node, .react, .vue, .python, .ruby, .java, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .d3, .figma, .net, .portuguese, .swift {
 			width: 10rem;
 		}
 		.express {
@@ -17,7 +17,7 @@ $lighter-color: #95989A;
 		.redux, .csharp, .backbone, .graphQL {
 			width: 9.5rem;
 		}
-		.go {
+		.go, .django {
 			width: 4rem;
 		}
 		.spanish {
@@ -26,12 +26,15 @@ $lighter-color: #95989A;
 		.italian {
 			width: 3.5rem;
 		}
-		.php {
+		.php, .polymer, .ember {
 			width: 10rem;
 			padding-bottom: 10px;
 		}
 		.firebase {
 			width: 4rem;
+		}
+		.azure {
+			width: 10rem;
 		}
 	}
 }
@@ -59,7 +62,7 @@ $lighter-color: #95989A;
 		.go {
 			width: 7rem;
 		}
-		.spanish {
+		.spanish, .django {
 			width: 8.2rem;
 		}
 		.italian {
@@ -73,7 +76,7 @@ $lighter-color: #95989A;
 			padding-bottom: 15px;
 		}
 		.ember {
-			width: 11rem;
+			width: 10rem;
 			margin-bottom: 40px;
 		}
 		.azure, .java {
