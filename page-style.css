@@ -1665,7 +1665,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -1726,12 +1727,18 @@
   z-index: 2;
 }
 
+#toggle:focus {
+  outline: 0;
+}
+
 .side-bar {
   margin-top: 5vh;
 }
 
 .side-bar .name {
-  align-self: auto;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
   text-align: center;
   font-family: 'Heebo', sans-serif;
 }

@@ -76,6 +76,9 @@ $lighter-color: #95989A;
 	font-weight: 700;
 	position: relative;
 	z-index: 2;
+	&:focus {
+		outline: 0;
+	}
 }
 
 .side-bar {
