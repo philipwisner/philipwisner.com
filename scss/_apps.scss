@@ -85,6 +85,30 @@ $lighter-color: #95989A;
 				margin-left: 60px;
 			}
 		}
+		#streamy {
+			margin-bottom: 1--px;
+			img {
+				float: right;
+				max-width: 450px;
+				margin-bottom: 6vh;
+				margin-top: 2vh;
+			}
+			#streamy-logo {
+				position: relative;
+				left: -430px;
+				width: 100%;
+				max-width: 330px;
+			}
+			.screenshot {
+				float: left;
+				max-width: 250px;
+				margin-bottom: 4vh;
+				margin-left: -20px;
+			}
+			.app-content {
+				margin-left: 60px;
+			}
+		}
 		#diti {
 			margin-bottom: 125px;
         img {
