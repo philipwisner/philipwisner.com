@@ -1191,6 +1191,9 @@
     max-width: 400px;
     margin-bottom: 4vh;
   }
+  .apps .app img.larger {
+    max-width: 320px;
+  }
   .apps .app .screenshot {
     max-width: 220px;
     margin: 0 auto;
@@ -1219,12 +1222,61 @@
   .apps .app {
     height: 485px;
   }
+  .apps .app.mlab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .apps .app.mlab .left-content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .apps .app.mlab .right-content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  .apps .app.streamy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .apps .app.streamy .left-content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  .apps .app.streamy .right-content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
   .apps .app img {
     float: left;
     margin: 0 auto;
     max-width: 450px;
     margin-bottom: 6vh;
     margin-top: 2vh;
+  }
+  .apps .app img.larger {
+    max-width: 320px;
   }
   .apps .app .screenshot {
     float: right;
@@ -1259,30 +1311,6 @@
     margin-left: -20px;
   }
   .apps #farm-voyage .app-content {
-    margin-left: 60px;
-  }
-  .apps #streamy {
-    margin-bottom: 1--px;
-  }
-  .apps #streamy img {
-    float: right;
-    max-width: 450px;
-    margin-bottom: 6vh;
-    margin-top: 2vh;
-  }
-  .apps #streamy #streamy-logo {
-    position: relative;
-    left: -430px;
-    width: 100%;
-    max-width: 330px;
-  }
-  .apps #streamy .screenshot {
-    float: left;
-    max-width: 250px;
-    margin-bottom: 4vh;
-    margin-left: -20px;
-  }
-  .apps #streamy .app-content {
     margin-left: 60px;
   }
   .apps #diti {
