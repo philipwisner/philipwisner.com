@@ -971,22 +971,8 @@
   margin: 0 auto;
 }
 
-.portfolio .portfolio-item .ifttt {
-  margin-top: -20px;
-}
-
 .portfolio .portfolio-item .neat {
   max-width: 48%;
-  margin: 0 auto;
-  margin-top: -20px;
-}
-
-.portfolio .portfolio-item .spotify {
-  padding: 18px;
-}
-
-.portfolio .portfolio-item .google-logo {
-  padding: 35px;
   margin: 0 auto;
   margin-top: -20px;
 }
