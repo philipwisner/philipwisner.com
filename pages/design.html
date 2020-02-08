@@ -1,68 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109529100-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 		gtag('js', new Date());
 		gtag('config', 'UA-109529100-1');
 	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="portfolio">
-  <meta name="author" content="philip wisner">
-  <title>Philip Wisner | Web Developer - Design</title>
-  <link rel="shortcut icon" href="../favicon.ico">
+	<meta name="description" content="portfolio">
+	<meta name="author" content="philip wisner">
+	<title>Philip Wisner | Web Developer - Design</title>
+	<link rel="shortcut icon" href="../favicon.ico">
 	<link rel="stylesheet" href="../page-style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
 </head>
+
 <body>
 	<div class="container-fluid ">
-			<button id="toggle" onclick="toggleNav()">{ }</button>
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse" id="side-nav">
-				<div class="name">
-					<h1>&lt;philip.wisner&gt;</h1>
-					<h2>web developer</h2>
-				</div>
-				<ul class="list">
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="websites.html">Websites</a></li>
-					<li><a href="apps.html">Apps</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="photography.html">Photography</a></li>
-					<li><a href="design.html" id="active">{ Design }</a></li>
-					<li><a href="travel.html">Travel</a></li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-				<ul class="social">
-					<li><a href="https://github.com/philipwisner" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/philipwisner" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-				</ul>
-				<ul class="about-contact">
-					<li><a href="about.html">about</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
+		<button id="toggle" onclick="toggleNav()">{ }</button>
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse" id="side-nav">
+			<div class="name">
+				<h1>&lt;philip.wisner&gt;</h1>
+				<h2>web developer</h2>
 			</div>
+			<ul class="list">
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="websites.html">Websites</a></li>
+				<li><a href="apps.html">Apps</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="photography.html">Photography</a></li>
+				<li><a href="design.html" id="active">{ Design }</a></li>
+				<li><a href="travel.html">Travel</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+			<ul class="social">
+				<li><a href="https://github.com/philipwisner" target="_blank"><i class="fa fa-github fa-2x"
+							aria-hidden="true"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/philipwisner" target="_blank"><i class="fa fa-linkedin fa-2x"
+							aria-hidden="true"></i></a></li>
+			</ul>
+			<ul class="about-contact">
+				<li><a href="about.html">about</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</div>
 
 		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
 			<h1>&lt;Design&gt;</h1>
 			<div class="design container-fluid">
 
 				<div class="row category">
+					<h2>Wireframes</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://www.behance.net/gallery/91755021/Streamy" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/Streamy.svg" alt="Streamy"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://www.behance.net/gallery/91755021/Streamy" target="_blank">Streamy</a>
+								</h4>
+								<p class="card-text">A simple media streaming prototype similar to Spotify.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://xd.adobe.com/view/ee12201c-3db6-4953-5863-940d7f8d9222-9823/" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/Todos.svg" alt="Todos"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://xd.adobe.com/view/ee12201c-3db6-4953-5863-940d7f8d9222-9823/"
+										target="_blank">Todos</a>
+								</h4>
+								<p class="card-text">A minimalist Todo App built for mobile.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://www.behance.net/gallery/91762363/S2i-Website" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/S2i.svg" alt="S2i"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://www.behance.net/gallery/91762363/S2i-Website" target="_blank">S2i Group</a>
+								</h4>
+								<p class="card-text">Landing Page for S2i Group. Implemented with WordPress.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://www.behance.net/gallery/91763401/MLab" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/MLab.svg" alt="MLab"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://www.behance.net/gallery/91763401/MLab" target="_blank">MLab</a>
+								</h4>
+								<p class="card-text">A website to demonstrate different implementations of Machine Learning.</p>
+							</div>
+						</div>
+					</div>
+<<<<<<< HEAD
+
+			</div>
+
+        <div class="row category">
+					<h2>Wireframes</h2>
+				</div>
+				<div class="row">
+					<!--<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+=======
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+>>>>>>> master
+						<div class="card">
+							<a href="https://xd.adobe.com/view/06ca6252-2189-4dc6-57b6-cf4362adec60-70fb/" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/VendorReg.svg" alt="VendorReg"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://xd.adobe.com/view/06ca6252-2189-4dc6-57b6-cf4362adec60-70fb/" target="_blank">VendorReg</a>
+								</h4>
+								<p class="card-text">An app for keeping track of vendors, products and contacts.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://xd.adobe.com/view/a9488ce1-5188-4e90-418f-07e63276e0a1-df79/" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/Ambulnz.svg" alt="Ambulnz"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://xd.adobe.com/view/a9488ce1-5188-4e90-418f-07e63276e0a1-df79/"
+										target="_blank">Ambulnz</a>
+								</h4>
+								<p class="card-text">A Simple Questionnaire for outpatient dropoff.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+<<<<<<< HEAD
+							<a href="#" target="_blank"><img class="card-img-top img-responsive" src="../images/encompass.svg" alt="encompass"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#" target="_blank">Ask</a>
+=======
+							<a href="https://www.behance.net/gallery/91765771/ASK-Q-A-App" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/Ask.svg" alt="Ask"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://www.behance.net/gallery/91765771/ASK-Q-A-App" target="_blank">Ask</a>
+>>>>>>> master
+								</h4>
+								<p class="card-text">An app for moderating texted questions for Q&amp;A sessions.</p>
+							</div>
+						</div>
+<<<<<<< HEAD
+					</div>-->
+
+=======
+					</div>
+>>>>>>> master
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://xd.adobe.com/view/dca50301-12a0-42c8-6545-1335b58493bb-aa94/" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/Inventory.svg" alt="inventory"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://xd.adobe.com/view/dca50301-12a0-42c8-6545-1335b58493bb-aa94/"
+										target="_blank">Inventory</a>
+								</h4>
+								<p class="card-text">An app for scanning and keeping track of purchased assets.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://www.behance.net/gallery/75904551/Encompass" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/encompass.svg" alt="encompass"></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://www.behance.net/gallery/75904551/Encompass" target="_blank">Encompass</a>
+								</h4>
+								<p class="card-text">A web app designed to facilitate the process of mathematical learning.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://www.figma.com/proto/gMhaqcKRT30i7R3lLXln79o4/Diti?scaling=contain&node-id=2%3A2"
+								target="_blank"><img class="card-img-top img-responsive" src="../images/Diti.svg" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://www.figma.com/proto/gMhaqcKRT30i7R3lLXln79o4/Diti?scaling=contain&node-id=2%3A2"
+										target="_blank">Diti</a>
+								</h4>
+								<p class="card-text">Wireframes for a Todo app using pure VanillaJS.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://www.figma.com/proto/TMQVcGsKrzKSEVduRJeW2Tae/philipwisner.com?scaling=contain&node-id=1%3A500"
+								target="_blank"><img class="card-img-top img-responsive myicon" src="../favicon.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://www.figma.com/proto/TMQVcGsKrzKSEVduRJeW2Tae/philipwisner.com?scaling=contain&node-id=1%3A500"
+										target="_blank">philipwisner.com</a>
+								</h4>
+								<p class="card-text">Check out my wireframes for the desktop layout for this website.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="../images/Minimo%20Mobile.pdf" target="_blank"><img class="card-img-top img-responsive"
+									src="../images/minimo.svg" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="../images/Minimo%20Mobile.pdf" target="_blank">Minimo</a>
+								</h4>
+								<p class="card-text">Take a look at my wireframes for my mobile design.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://www.figma.com/proto/cXt9FG20cHbW3SKDexMcG9Eg/Farm-Voyage?scaling=contain&node-id=1%3A2"
+								target="_blank"><img class="card-img-top img-responsive" src="../images/farm%20voyage.svg" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://www.figma.com/proto/cXt9FG20cHbW3SKDexMcG9Eg/Farm-Voyage?scaling=contain&node-id=1%3A2"
+										target="_blank">Farm Voyage</a>
+								</h4>
+								<p class="card-text">Take a look at my prototype for the desktop layout.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+						<div class="card">
+							<a href="https://www.figma.com/proto/cCYD28SfgVfPz5368KJV6xC9/Drag-Quiz-Wireframes?scaling=contain&node-id=1%3A1181"
+								target="_blank"><img class="card-img-top img-responsive" src="../images/dragquiz.svg" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="https://www.figma.com/proto/cCYD28SfgVfPz5368KJV6xC9/Drag-Quiz-Wireframes?scaling=contain&node-id=1%3A1181"
+										target="_blank">Drag Quiz</a>
+								</h4>
+								<p class="card-text">Simple mockup &amp; protoype for my first game. Desktop Only!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="row category">
 					<h2>Concepts</h2>
 				</div>
 				<div class="row">
 					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
 						<div class="card">
-							<a href="#" target="_blank"><img class="card-img-top img-responsive" src="../images/Procuratio.svg" alt=""></a>
+							<a href="#" target="_blank"><img class="card-img-top img-responsive" src="../images/Procuratio.svg"
+									alt=""></a>
 							<div class="card-body">
 								<h4 class="card-title">
 									<a href="#" target="_blank">Procuratio</a>
@@ -72,9 +283,10 @@
 						</div>
 					</div>
 
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
 						<div class="card">
-							<a href="https://www.behance.net/gallery/64234953/Curo" target="blank"><img class="card-img-top img-responsive" src="../images/curo.svg" alt=""></a>
+							<a href="https://www.behance.net/gallery/64234953/Curo" target="blank"><img
+									class="card-img-top img-responsive" src="../images/curo.svg" alt=""></a>
 							<div class="card-body">
 								<h4 class="card-title">
 									<a href="https://www.behance.net/gallery/64234953/Curo" target="_blank">Curo</a>
@@ -86,7 +298,8 @@
 
 					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
 						<div class="card">
-							<a href="https://www.behance.net/gallery/61419649/Toobly" target="_blank"><img class="card-img-top img-responsive" src="../images/toobly.svg" alt=""></a>
+							<a href="https://www.behance.net/gallery/61419649/Toobly" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/toobly.svg" alt=""></a>
 							<div class="card-body">
 								<h4 class="card-title">
 									<a href="https://www.behance.net/gallery/61419649/Toobly" target="_blank">Toobly</a>
@@ -98,7 +311,8 @@
 
 					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
 						<div class="card">
-							<a href="https://www.behance.net/gallery/60048765/Kopla" target="_blank"><img class="card-img-top img-responsive" src="../images/kopla.svg" alt=""></a>
+							<a href="https://www.behance.net/gallery/60048765/Kopla" target="_blank"><img
+									class="card-img-top img-responsive" src="../images/kopla.svg" alt=""></a>
 							<div class="card-body">
 								<h4 class="card-title">
 									<a href="https://www.behance.net/gallery/60048765/Kopla" target="_blank">Kopla</a>
@@ -108,104 +322,7 @@
 						</div>
 					</div>
 
-			</div>
-
-        <div class="row category">
-					<h2>Wireframes</h2>
 				</div>
-				<div class="row">
-					<!--<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="https://www.behance.net/gallery/75904551/Encompass" target="_blank"><img class="card-img-top img-responsive" src="../images/encompass.svg" alt="encompass"></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="https://www.behance.net/gallery/75904551/Encompass" target="_blank">Ambulnz</a>
-								</h4>
-								<p class="card-text">Simple Questionnaire for outpatient dropoff.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="#" target="_blank"><img class="card-img-top img-responsive" src="../images/encompass.svg" alt="encompass"></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="#" target="_blank">Ask</a>
-								</h4>
-								<p class="card-text">An app for moderating texted questions for Q&amp;A sessions.</p>
-							</div>
-						</div>
-					</div>-->
-
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="https://www.behance.net/gallery/75904551/Encompass" target="_blank"><img class="card-img-top img-responsive" src="../images/encompass.svg" alt="encompass"></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="https://www.behance.net/gallery/75904551/Encompass" target="_blank">Encompass</a>
-								</h4>
-								<p class="card-text">A web app designed to facilitate the process of mathematical learning.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="https://www.figma.com/proto/gMhaqcKRT30i7R3lLXln79o4/Diti?scaling=contain&node-id=2%3A2" target="_blank"><img class="card-img-top img-responsive" src="../images/Diti.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="https://www.figma.com/proto/gMhaqcKRT30i7R3lLXln79o4/Diti?scaling=contain&node-id=2%3A2" target="_blank">Diti</a>
-								</h4>
-								<p class="card-text">Wireframes for a To Do Website using pure Vanilla JS.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="https://www.figma.com/proto/TMQVcGsKrzKSEVduRJeW2Tae/philipwisner.com?scaling=contain&node-id=1%3A500" target="_blank"><img class="card-img-top img-responsive myicon" src="../favicon.png" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="https://www.figma.com/proto/TMQVcGsKrzKSEVduRJeW2Tae/philipwisner.com?scaling=contain&node-id=1%3A500" target="_blank">philipwisner.com</a>
-								</h4>
-								<p class="card-text">Check out my wireframes for the desktop layout for this website.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="../images/Minimo%20Mobile.pdf" target="_blank"><img class="card-img-top img-responsive" src="../images/minimo.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="../images/Minimo%20Mobile.pdf" target="_blank">Minimo</a>
-								</h4>
-								<p class="card-text">Take a look at my wireframes for my mobile design.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="https://www.figma.com/proto/cXt9FG20cHbW3SKDexMcG9Eg/Farm-Voyage?scaling=contain&node-id=1%3A2" target="_blank"><img class="card-img-top img-responsive" src="../images/farm%20voyage.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="https://www.figma.com/proto/cXt9FG20cHbW3SKDexMcG9Eg/Farm-Voyage?scaling=contain&node-id=1%3A2" target="_blank">Farm Voyage</a>
-								</h4>
-								<p class="card-text">Take a look at my prototype for the desktop layout.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="https://www.figma.com/proto/cCYD28SfgVfPz5368KJV6xC9/Drag-Quiz-Wireframes?scaling=contain&node-id=1%3A1181" target="_blank"><img class="card-img-top img-responsive" src="../images/dragquiz.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="https://www.figma.com/proto/cCYD28SfgVfPz5368KJV6xC9/Drag-Quiz-Wireframes?scaling=contain&node-id=1%3A1181" target="_blank">Drag Quiz</a>
-								</h4>
-								<p class="card-text">Simple mockup &amp; protoype for my first game. Desktop Only!</p>
-							</div>
-						</div>
-					</div>
-			</div>
 
 			</div>
 		</div>
@@ -216,16 +333,17 @@
 		function toggleNav() {
 			var x = document.getElementById("side-nav");
 			var y = document.getElementById("content")
-				if (x.style.display === "none") {
-					x.style.display = "block";
-					y.style.display = "none";
+			if (x.style.display === "none") {
+				x.style.display = "block";
+				y.style.display = "none";
 			} else {
-					x.style.display = "none";
-					y.style.display = "block";
+				x.style.display = "none";
+				y.style.display = "block";
 			}
 		}
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>

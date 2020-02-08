@@ -9,6 +9,9 @@ $lighter-color: #95989A;
 				margin: 0 auto;
 				max-width: 400px;
 				margin-bottom: 4vh;
+				&.larger {
+					max-width: 320px;
+				}
 			}
 			.screenshot {
 				max-width: 220px;
@@ -26,9 +29,9 @@ $lighter-color: #95989A;
 					text-align: center;
 				}
 			}
-            #diti-logo {
-                max-width: 280px;
-            }
+			#diti-logo {
+				max-width: 280px;
+			}
 		}
 		button {
 			margin: 2vh 10px 10px 10px;
@@ -40,12 +43,39 @@ $lighter-color: #95989A;
 	.apps {
 		.app {
 			height: 485px;
+			&.mlab {
+				display: flex;
+				align-items: center;
+				align-content: center;
+				justify-content: center;
+			.left-content {
+				flex: 1 1 auto;
+			}
+			.right-content {
+				flex: 0 1 auto;
+			}
+			}
+			&.streamy {
+				display: flex;
+				align-items: center;
+				align-content: center;
+				justify-content: center;
+				.left-content {
+					flex: 0 1 auto;
+				}
+				.right-content {
+					flex: 1 1 auto;
+				}
+			}
 			img {
 				float: left;
 				margin: 0 auto;
 				max-width: 450px;
 				margin-bottom: 6vh;
 				margin-top: 2vh;
+				&.larger {
+					max-width: 320px;
+				}
 			}
 			.screenshot {
 				float: right;
