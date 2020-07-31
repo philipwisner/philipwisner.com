@@ -209,6 +209,9 @@
   .skills .redux, .skills .csharp, .skills .backbone, .skills .graphQL {
     width: 9.5rem;
   }
+  .skills .kotlin {
+    width: 8rem;
+  }
   .skills .go, .skills .django {
     width: 4rem;
   }
@@ -221,6 +224,9 @@
   .skills .php, .skills .polymer, .skills .ember {
     width: 10rem;
     padding-bottom: 10px;
+  }
+  .skills .svelte {
+    padding: 0 3px;
   }
   .skills .firebase {
     width: 4rem;
@@ -238,6 +244,9 @@
   .skills .sass, .skills .node, .skills .react, .skills .vue, .skills .python, .skills .ruby, .skills .aws, .skills .heroku, .skills .illustrator, .skills .photoshop, .skills .ionic, .skills .lightroom, .skills .indesign, .skills .xd, .skills .webpack, .skills .figma, .skills .net, .skills .portuguese {
     width: 10rem;
   }
+  .skills .svelte {
+    width: 8rem;
+  }
   .skills .express {
     width: 8.5rem;
   }
@@ -247,6 +256,9 @@
   }
   .skills .redux, .skills .csharp, .skills .backbone, .skills .graphQL, .skills .d3, .skills .electron {
     width: 9.5rem;
+  }
+  .skills .kotlin {
+    width: 9rem;
   }
   .skills .go {
     width: 7rem;

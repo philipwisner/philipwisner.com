@@ -17,6 +17,9 @@ $lighter-color: #95989A;
 		.redux, .csharp, .backbone, .graphQL {
 			width: 9.5rem;
 		}
+		.kotlin {
+			width: 8rem;
+		}
 		.go, .django {
 			width: 4rem;
 		}
@@ -29,6 +32,9 @@ $lighter-color: #95989A;
 		.php, .polymer, .ember {
 			width: 10rem;
 			padding-bottom: 10px;
+		}
+		.svelte {
+			padding: 0 3px;
 		}
 		.firebase {
 			width: 4rem;
@@ -49,6 +55,9 @@ $lighter-color: #95989A;
 		.sass, .node, .react, .vue, .python, .ruby, .aws, .heroku, .illustrator, .photoshop, .ionic, .lightroom, .indesign, .xd, .webpack, .figma, .net, .portuguese {
 			width: 10rem;
 		}
+		.svelte {
+			width: 8rem;
+		}
 		.express {
 			width: 8.5rem;
 		}
@@ -58,6 +67,9 @@ $lighter-color: #95989A;
 		}
 		.redux, .csharp, .backbone, .graphQL, .d3, .electron {
 			width: 9.5rem;
+		}
+		.kotlin {
+			width: 9rem;
 		}
 		.go {
 			width: 7rem;
