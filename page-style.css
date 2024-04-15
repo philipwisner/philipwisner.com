@@ -383,7 +383,7 @@
 }
 
 .country-list {
-  margin-top: 5vh;
+  margin-top: 4vh;
 }
 
 .country-number {
@@ -425,12 +425,18 @@
 }
 
 .panel-heading {
-  border-top: 0.5px solid #95989A;
+  border-bottom: 0.5px solid #95989A !important;
+  border-radius: 0 !important;
+  cursor: pointer;
+  h4 {
+      font-weight: 600 !important;
+  }
 }
 
 .panel {
   max-width: 1000px;
   margin: 0 auto;
+  box-shadow: none !important;
 }
 
 .gap {

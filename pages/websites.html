@@ -1,222 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-109529100-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109529100-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-109529100-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="portfolio" />
+    <meta name="author" content="philip wisner" />
+    <title>Philip Wisner | Web Developer - Websites</title>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../page-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700"
+      rel="stylesheet"
+    />
+  </head>
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'UA-109529100-1');
-	</script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="portfolio">
-	<meta name="author" content="philip wisner">
-	<title>Philip Wisner | Web Developer - Websites</title>
-	<link rel="shortcut icon" href="../favicon.ico">
-	<link rel="stylesheet" href="../page-style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
-</head>
+  <body>
+    <div class="container-fluid">
+      <button id="toggle" onclick="toggleNav()">{ }</button>
+      <div
+        class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse"
+        id="side-nav"
+      >
+        <div class="name">
+          <h1>&lt;philip.wisner&gt;</h1>
+          <h2>web developer</h2>
+        </div>
+        <ul class="list">
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="websites.html" id="active">{ Websites }</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="https://github.com/philipwisner" target="_blank"
+              ><i class="fa fa-github fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/philipwisner" target="_blank"
+              ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <ul class="about-contact">
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
 
-<body>
-	<div class="container-fluid ">
-		<button id="toggle" onclick="toggleNav()">{ }</button>
-		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse" id="side-nav">
-			<div class="name">
-				<h1>&lt;philip.wisner&gt;</h1>
-				<h2>web developer</h2>
-			</div>
-			<ul class="list">
-				<li><a href="skills.html">Skills</a></li>
-				<li><a href="resume.html">Resume</a></li>
-				<li><a href="websites.html" id="active">{ Websites }</a></li>
-				<li><a href="apps.html">Apps</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="photography.html">Photography</a></li>
-				<li><a href="design.html">Design</a></li>
-				<li><a href="travel.html">Travel</a></li>
-				<li><a href="blog.html">Blog</a></li>
-			</ul>
-			<ul class="social">
-				<li><a href="https://github.com/philipwisner" target="_blank"><i class="fa fa-github fa-2x"
-							aria-hidden="true"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/philipwisner" target="_blank"><i class="fa fa-linkedin fa-2x"
-							aria-hidden="true"></i></a></li>
-			</ul>
-			<ul class="about-contact">
-				<li><a href="about.html">about</a></li>
-				<li><a href="contact.html">contact</a></li>
-			</ul>
-		</div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
+        <h1>&lt;Websites&gt;</h1>
+        <div class="websites container-fluid">
+          <div class="row category">
+            <h2>Clients</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="https://s2igrp.com" target="_blank"
+                  ><img
+                    class="card-img-top img-responsive"
+                    src="../images/S2i.svg"
+                    alt="S2i"
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="https://s2igrp.com" target="_blank">S2i Group</a>
+                  </h4>
+                  <p class="card-text">
+                    Landing page for a technical consulting company made with
+                    WordPress.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="row category">
+            <h2>Original/Concept</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top img-responsive"
+                    src="../images/Procuratio.svg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Procuratio</a>
+                  </h4>
+                  <p class="card-text">
+                    Coming Soon. Checkout design
+                    <a href="#" target="_blank">here</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top img-responsive"
+                    src="../images/curo.svg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Curo</a>
+                  </h4>
+                  <p class="card-text">
+                    Coming Soon. Checkout design
+                    <a
+                      href="https://www.behance.net/gallery/64234953/Curo"
+                      target="_blank"
+                      >here</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top img-responsive"
+                    src="../images/toobly.svg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Toobly</a>
+                  </h4>
+                  <p class="card-text">
+                    Coming Soon. Checkout design
+                    <a
+                      href="https://www.behance.net/gallery/61419649/Toobly"
+                      target="_blank"
+                      >here</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top img-responsive"
+                    src="../images/kopla.svg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Kopla</a>
+                  </h4>
+                  <p class="card-text">
+                    Coming Soon. Checkout design
+                    <a
+                      href="https://www.behance.net/gallery/60048765/Kopla"
+                      target="_blank"
+                      >here</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
-			<h1>&lt;Websites&gt;</h1>
-			<div class="websites container-fluid">
+          <div class="row category recreated">
+            <h2>Recreated</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="websites/recreated/google/google.html" target="_blank"
+                  ><img
+                    class="card-img-top img-responsive"
+                    src="../images/google.svg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a
+                      href="websites/recreated/google/google.html"
+                      target="_blank"
+                      >Google Homepage</a
+                    >
+                  </h4>
+                  <p class="card-text">
+                    This was the first webapge I ever recreated.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="websites/recreated/IFTTT/index.html" target="_blank"
+                  ><img
+                    class="card-img-top img-responsive"
+                    src="../images/ifttt.svg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a
+                      href="websites/recreated/IFTTT/index.html"
+                      target="_blank"
+                      >IFTTT Homepage</a
+                    >
+                  </h4>
+                  <p class="card-text">
+                    I loved the colors I decided to recreate their homepage.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-			<div class="row category">
-					<h2>Clients</h2>
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="https://s2igrp.com" target="_blank"><img class="card-img-top img-responsive" src="../images/S2i.svg" alt="S2i"></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="https://s2igrp.com" target="_blank">S2i Group</a>
-								</h4>
-								<p class="card-text">Landing page for a technical consulting company made with WordPress.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row category">
-					<h2>Original/Concept</h2>
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="#"><img class="card-img-top img-responsive" src="../images/Procuratio.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="#">Procuratio</a>
-								</h4>
-								<p class="card-text">Coming Soon. Checkout design <a href="#" target="_blank">here</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="#"><img class="card-img-top img-responsive" src="../images/curo.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="#">Curo</a>
-								</h4>
-								<p class="card-text">Coming Soon. Checkout design <a
-										href="https://www.behance.net/gallery/64234953/Curo" target="_blank">here</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="#"><img class="card-img-top img-responsive" src="../images/toobly.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="#">Toobly</a>
-								</h4>
-								<p class="card-text">Coming Soon. Checkout design <a
-										href="https://www.behance.net/gallery/61419649/Toobly" target="_blank">here</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="#"><img class="card-img-top img-responsive" src="../images/kopla.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="#">Kopla</a>
-								</h4>
-								<p class="card-text">Coming Soon. Checkout design <a
-										href="https://www.behance.net/gallery/60048765/Kopla" target="_blank">here</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row category recreated">
-					<h2>Recreated</h2>
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="websites/recreated/google/google.html" target="_blank"><img
-									class="card-img-top img-responsive" src="../images/google.svg"
-									alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="websites/recreated/google/google.html" target="_blank">Google Homepage</a>
-								</h4>
-								<p class="card-text">This was the first webapge I ever recreated.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="websites/recreated/IFTTT/index.html" target="_blank"><img
-									class="card-img-top img-responsive" src="../images/ifttt.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="websites/recreated/IFTTT/index.html" target="_blank">IFTTT Homepage</a>
-								</h4>
-								<p class="card-text">I loved the colors I decided to recreate their homepage.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="websites/recreated/spotify/index.html" target="_blank"><img
-									class="card-img-top img-responsive" src="../images/spotify.svg"
-									alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="websites/recreated/spotify/index.html" target="_blank">Spotify Homepage</a>
-								</h4>
-								<p class="card-text">I recreated this page my third day at Ironhack.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="websites/recreated/instagram/index.html" target="_blank"><img
-									class="card-img-top img-responsive" src="../images/instagram.svg"
-									alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="websites/recreated/instagram/index.html" target="_blank">Instagram Homepage</a>
-								</h4>
-								<p class="card-text">I recreated this page my second day at Ironhack.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="websites/recreated/neat/index.html" target="_blank"><img class="card-img-top img-responsive neat"
-									src="websites/recreated/neat/neat.jpg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="websites/recreated/neat/index.html" target="_blank">Neat Homepage</a>
-								</h4>
-								<p class="card-text">I encountered this page and thought it was a simple modern page.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-						<div class="card">
-							<a href="websites/recreated/bem/index.html" target="_blank"><img class="card-img-top img-responsive bem"
-									src="websites/recreated/bem/bem.svg" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="websites/recreated/bem/index.html" target="_blank">Bem Homepage</a>
-								</h4>
-								<p class="card-text">I recreated this page in under a half hour.</p>
-							</div>
-						</div>
-					</div>
-					<!--
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="websites/recreated/spotify/index.html" target="_blank"
+                  ><img
+                    class="card-img-top img-responsive"
+                    src="../images/spotify.svg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a
+                      href="websites/recreated/spotify/index.html"
+                      target="_blank"
+                      >Spotify Homepage</a
+                    >
+                  </h4>
+                  <p class="card-text">
+                    I recreated this page my third day at Ironhack.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a
+                  href="websites/recreated/instagram/index.html"
+                  target="_blank"
+                  ><img
+                    class="card-img-top img-responsive"
+                    src="../images/instagram.svg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a
+                      href="websites/recreated/instagram/index.html"
+                      target="_blank"
+                      >Instagram Homepage</a
+                    >
+                  </h4>
+                  <p class="card-text">
+                    I recreated this page my second day at Ironhack.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="websites/recreated/neat/index.html" target="_blank"
+                  ><img
+                    class="card-img-top img-responsive neat"
+                    src="websites/recreated/neat/neat.jpg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="websites/recreated/neat/index.html" target="_blank"
+                      >Neat Homepage</a
+                    >
+                  </h4>
+                  <p class="card-text">
+                    I encountered this page and thought it was a simple modern
+                    page.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card">
+                <a href="websites/recreated/bem/index.html" target="_blank"
+                  ><img
+                    class="card-img-top img-responsive bem"
+                    src="websites/recreated/bem/bem.svg"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="websites/recreated/bem/index.html" target="_blank"
+                      >Bem Homepage</a
+                    >
+                  </h4>
+                  <p class="card-text">
+                    I recreated this page in under a half hour.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--
 				<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
 					<div class="card">
 						<a href="websites/recreated/bitly/index.html" target="_blank">
@@ -231,7 +363,7 @@
 					</div>
 				</div>
 -->
-					<!--
+            <!--
 				<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
 					<div class="card">
 						<a href="websites/recreated/pitchfork/index.html" target="_blank">
@@ -247,7 +379,7 @@
 				</div>
 -->
 
-					<!--<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <!--<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
 						<div class="card">
 							<a href="#"><img class="card-img-top img-responsive" src="http://placehold.it/700x400" alt=""></a>
 							<div class="card-body">
@@ -280,11 +412,11 @@
 							</div>
 						</div>
 					</div>-->
-				</div>
-				<!--<div class="row category">
+          </div>
+          <!--<div class="row category">
 					<h2>Redesign</h2>
 				</div>-->
-				<!--<div class="row">
+          <!--<div class="row">
 					<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
 						<div class="card">
 							<a href="#"><img class="card-img-top img-responsive" src="http://placehold.it/700x400" alt=""></a>
@@ -330,27 +462,24 @@
 						</div>
 					</div>
 				</div>-->
+        </div>
+      </div>
+    </div>
 
-			</div>
-		</div>
-
-	</div>
-
-	<script>
-		function toggleNav() {
-			var x = document.getElementById("side-nav");
-			var y = document.getElementById("content")
-			if (x.style.display === "none") {
-				x.style.display = "block";
-				y.style.display = "none";
-			} else {
-				x.style.display = "none";
-				y.style.display = "block";
-			}
-		}
-	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
-
+    <script>
+      function toggleNav() {
+        var x = document.getElementById("side-nav");
+        var y = document.getElementById("content");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.display = "none";
+        } else {
+          x.style.display = "none";
+          y.style.display = "block";
+        }
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
 </html>
