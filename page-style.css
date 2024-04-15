@@ -276,8 +276,23 @@
     width: 10rem;
     margin-bottom: 20px;
   }
-  .skills .swift {
+  .skills .svelte {
     width: 10rem;
+  }
+  .skills .postgres {
+    width: 9.5rem;
+  }
+  .skills .flask {
+    width: 11rem;
+  }
+  .skills .vite {
+    width: 9rem;
+  }
+  .skills .styled {
+    width: 12rem;
+  }
+  .skills .swift {
+    width: 11rem;
     margin-bottom: 20px;
   }
 }

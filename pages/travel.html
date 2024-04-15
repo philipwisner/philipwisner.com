@@ -1,543 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109529100-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-109529100-1');
-	</script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="portfolio">
-  <meta name="author" content="philip wisner">
-  <title>Philip Wisner | Web Developer - Travel</title>
-  <link rel="shortcut icon" href="../favicon.ico">
-	<link rel="stylesheet" href="../page-style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
-</head>
-<body>
-	<div class="container-fluid ">
-			<button id="toggle" onclick="toggleNav()">{ }</button>
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse" id="side-nav">
-				<div class="name">
-					<h1>&lt;philip.wisner&gt;</h1>
-					<h2>web developer</h2>
-				</div>
-				<ul class="list">
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="websites.html">Websites</a></li>
-					<li><a href="apps.html">Apps</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="photography.html">Photography</a></li>
-					<li><a href="design.html">Design</a></li>
-					<li><a href="travel.html" id="active">{ Travel }</a></li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-				<ul class="social">
-					<li><a href="https://github.com/philipwisner" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/philipwisner" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-				</ul>
-				<ul class="about-contact">
-					<li><a href="about.html">about</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
-			</div>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-109529100-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-109529100-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="portfolio" />
+    <meta name="author" content="philip wisner" />
+    <title>Philip Wisner | Web Developer - Travel</title>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../page-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <button id="toggle" onclick="toggleNav()">{ }</button>
+      <div
+        class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse"
+        id="side-nav"
+      >
+        <div class="name">
+          <h1>&lt;philip.wisner&gt;</h1>
+          <h2>web developer</h2>
+        </div>
+        <ul class="list">
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="websites.html">Websites</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="travel.html" id="active">{ Travel }</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="https://github.com/philipwisner" target="_blank"
+              ><i class="fa fa-github fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/philipwisner" target="_blank"
+              ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <ul class="about-contact">
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
 
-		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
-			<h1>&lt;Travel&gt;</h1>
-			<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
-			<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
-			<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
-			<div id="mapdiv" style="width: 1000px; height: 450px;" class="img-responsive center-block"></div>
-			<div class="img-responsive center-block" style="width: 1000px; font-size: 70%; padding: 5px 0; text-align: center; background-color: #FFFFFF; margin-top: 1px; color: #D1D1D1;"></div>
-			<script type="text/javascript">
-				var map = AmCharts.makeChart("mapdiv",{
-				type: "map",
-				theme: "dark",
-				projection: "mercator",
-				panEventsEnabled : true,
-				backgroundColor : "#FFFFFF",
-				backgroundAlpha : 1,
-				zoomControl: {
-				zoomControlEnabled : true
-				},
-				dataProvider : {
-				map : "worldHigh",
-				getAreasFromMap : true,
-				areas :
-				[
-					{
-						"id": "AL",
-						"showAsSelected": true
-					},
-					{
-						"id": "AT",
-						"showAsSelected": true
-					},
-					{
-						"id": "BA",
-						"showAsSelected": true
-					},
-					{
-						"id": "BE",
-						"showAsSelected": true
-					},
-					{
-						"id": "BG",
-						"showAsSelected": true
-					},
-					{
-						"id": "HR",
-						"showAsSelected": true
-					},
-					{
-						"id": "CZ",
-						"showAsSelected": true
-					},
-					{
-						"id": "FR",
-						"showAsSelected": true
-					},
-					{
-						"id": "DE",
-						"showAsSelected": true
-					},
-					{
-						"id": "GR",
-						"showAsSelected": true
-					},
-					{
-						"id": "DR",
-						"showAsSelected": true
-					},
-					{
-						"id": "HU",
-						"showAsSelected": true
-					},
-					{
-						"id": "IE",
-						"showAsSelected": true
-					},
-					{
-						"id": "IT",
-						"showAsSelected": true
-					},
-					{
-						"id": "XK",
-						"showAsSelected": true
-					},
-					{
-						"id": "MK",
-						"showAsSelected": true
-					},
-					{
-						"id": "ME",
-						"showAsSelected": true
-					},
-					{
-						"id": "VA",
-						"showAsSelected": true
-					},
-					{
-						"id": "PT",
-						"showAsSelected": true
-					},
-					{
-						"id": "RS",
-						"showAsSelected": true
-					},
-					{
-						"id": "SK",
-						"showAsSelected": true
-					},
-					{
-						"id": "SI",
-						"showAsSelected": true
-					},
-					{
-						"id": "ES",
-						"showAsSelected": true
-					},
-					{
-						"id": "TR",
-						"showAsSelected": true
-					},
-					{
-						"id": "GB",
-						"showAsSelected": true
-					},
-					{
-						"id": "BS",
-						"showAsSelected": true
-					},
-					{
-						"id": "BZ",
-						"showAsSelected": true
-					},
-					{
-						"id": "CA",
-						"showAsSelected": true
-					},
-					{
-						"id": "CR",
-						"showAsSelected": true
-					},
-					{
-						"id": "SV",
-						"showAsSelected": true
-					},
-					{
-						"id": "GT",
-						"showAsSelected": true
-					},
-					{
-						"id": "HN",
-						"showAsSelected": true
-					},
-					{
-						"id": "MX",
-						"showAsSelected": true
-					},
-					{
-						"id": "NI",
-						"showAsSelected": true
-					},
-					{
-						"id": "PA",
-						"showAsSelected": true
-					},
-					{
-						"id": "PR",
-						"showAsSelected": true
-					},
-					{
-						"id": "US",
-						"showAsSelected": true
-					},
-					{
-						"id": "AR",
-						"showAsSelected": true
-					},
-					{
-						"id": "BO",
-						"showAsSelected": true
-					},
-					{
-						"id": "BR",
-						"showAsSelected": true
-					},
-					{
-						"id": "CL",
-						"showAsSelected": true
-					},
-					{
-						"id": "CO",
-						"showAsSelected": true
-					},
-					{
-						"id": "EC",
-						"showAsSelected": true
-					},
-					{
-						"id": "GY",
-						"showAsSelected": true
-					},
-					{
-						"id": "PY",
-						"showAsSelected": true
-					},
-					{
-						"id": "PE",
-						"showAsSelected": true
-					},
-					{
-						"id": "SR",
-						"showAsSelected": true
-					},
-					{
-						"id": "UY",
-						"showAsSelected": true
-					},
-					{
-						"id": "MA",
-						"showAsSelected": true
-					},
-					{
-						"id": "CN",
-						"showAsSelected": true
-					},
-					{
-						"id": "JP",
-						"showAsSelected": true
-					},
-					{
-						"id": "TH",
-						"showAsSelected": true
-					},
-					{
-						"id": "TT",
-						"showAsSelected": true
-					},
-					{
-						"id": "VI",
-						"showAsSelected": true
-					},
-					{
-						"id": "GI",
-						"showAsSelected": true
-					},
-					{
-						"id": "AG",
-						"showAsSelected": true
-					},
-					{
-						"id": "BB",
-						"showAsSelected": true
-					},
-					{
-						"id": "AN",
-						"showAsSelected": true
-					},
-					{
-						"id": "DM",
-						"showAsSelected": true
-					},
-					{
-						"id": "GD",
-						"showAsSelected": true
-					},
-					{
-						"id": "KN",
-						"showAsSelected": true
-					},
-					{
-						"id": "LC",
-						"showAsSelected": true
-					},
-					{
-						"id": "TC",
-						"showAsSelected": true
-					},
-					{
-						"id": "CW",
-						"showAsSelected": true
-					},
-					{
-						"id": "BQ",
-						"showAsSelected": true
-					},
-					{
-						"id": "VI",
-						"showAsSelected": true
-					}
-					{
-						"id": "LU",
-						"showAsSelected": true
-					}
-				]
-				},
-				areasSettings : {
-				autoZoom : true,
-				color : "#D1D1D1",
-				colorSolid : "#1845AD",
-				selectedColor : "#1845AD",
-				outlineColor : "#FFFFFF",
-				rollOverColor : "#1845AD",
-				rollOverOutlineColor : "#FFFFFF"
-				}
-				});
-			</script>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
+        <h1>&lt;Travel&gt;</h1>
+        <script
+          src="https://www.amcharts.com/lib/3/ammap.js"
+          type="text/javascript"
+        ></script>
+        <script
+          src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"
+          type="text/javascript"
+        ></script>
+        <script
+          src="https://www.amcharts.com/lib/3/themes/dark.js"
+          type="text/javascript"
+        ></script>
+        <div
+          id="mapdiv"
+          style="width: 1000px; height: 450px"
+          class="img-responsive center-block"
+        ></div>
+        <div
+          class="img-responsive center-block"
+          style="
+            width: 1000px;
+            font-size: 70%;
+            padding: 5px 0;
+            text-align: center;
+            background-color: #ffffff;
+            margin-top: 1px;
+            color: #d1d1d1;
+          "
+        ></div>
+        <script type="text/javascript">
+          var map = AmCharts.makeChart("mapdiv", {
+            type: "map",
+            theme: "dark",
+            projection: "mercator",
+            panEventsEnabled: true,
+            backgroundColor: "#FFFFFF",
+            backgroundAlpha: 1,
+            zoomControl: {
+              zoomControlEnabled: true,
+            },
+            dataProvider: {
+              map: "worldHigh",
+              getAreasFromMap: true,
+              areas: [
+                {
+                  id: "AL",
+                  showAsSelected: true,
+                },
+                {
+                  id: "AT",
+                  showAsSelected: true,
+                },
+                {
+                  id: "BA",
+                  showAsSelected: true,
+                },
+                {
+                  id: "BE",
+                  showAsSelected: true,
+                },
+                {
+                  id: "BG",
+                  showAsSelected: true,
+                },
+                {
+                  id: "HR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "CZ",
+                  showAsSelected: true,
+                },
+                {
+                  id: "FR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "DE",
+                  showAsSelected: true,
+                },
+                {
+                  id: "GR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "DR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "HU",
+                  showAsSelected: true,
+                },
+                {
+                  id: "IE",
+                  showAsSelected: true,
+                },
+                {
+                  id: "IT",
+                  showAsSelected: true,
+                },
+                {
+                  id: "XK",
+                  showAsSelected: true,
+                },
+                {
+                  id: "MK",
+                  showAsSelected: true,
+                },
+                {
+                  id: "ME",
+                  showAsSelected: true,
+                },
+                {
+                  id: "VA",
+                  showAsSelected: true,
+                },
+                {
+                  id: "PT",
+                  showAsSelected: true,
+                },
+                {
+                  id: "RS",
+                  showAsSelected: true,
+                },
+                {
+                  id: "SK",
+                  showAsSelected: true,
+                },
+                {
+                  id: "SI",
+                  showAsSelected: true,
+                },
+                {
+                  id: "ES",
+                  showAsSelected: true,
+                },
+                {
+                  id: "TR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "GB",
+                  showAsSelected: true,
+                },
+                {
+                  id: "BS",
+                  showAsSelected: true,
+                },
+                {
+                  id: "BZ",
+                  showAsSelected: true,
+                },
+                {
+                  id: "CA",
+                  showAsSelected: true,
+                },
+                {
+                  id: "CR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "SV",
+                  showAsSelected: true,
+                },
+                {
+                  id: "GT",
+                  showAsSelected: true,
+                },
+                {
+                  id: "HN",
+                  showAsSelected: true,
+                },
+                {
+                  id: "MX",
+                  showAsSelected: true,
+                },
+                {
+                  id: "NI",
+                  showAsSelected: true,
+                },
+                {
+                  id: "PA",
+                  showAsSelected: true,
+                },
+                {
+                  id: "PR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "US",
+                  showAsSelected: true,
+                },
+                {
+                  id: "AR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "BO",
+                  showAsSelected: true,
+                },
+                {
+                  id: "BR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "CL",
+                  showAsSelected: true,
+                },
+                {
+                  id: "CO",
+                  showAsSelected: true,
+                },
+                {
+                  id: "EC",
+                  showAsSelected: true,
+                },
+                {
+                  id: "GY",
+                  showAsSelected: true,
+                },
+                {
+                  id: "PY",
+                  showAsSelected: true,
+                },
+                {
+                  id: "PE",
+                  showAsSelected: true,
+                },
+                {
+                  id: "SR",
+                  showAsSelected: true,
+                },
+                {
+                  id: "UY",
+                  showAsSelected: true,
+                },
+                {
+                  id: "MA",
+                  showAsSelected: true,
+                },
+                {
+                  id: "CN",
+                  showAsSelected: true,
+                },
+                {
+                  id: "JP",
+                  showAsSelected: true,
+                },
+                {
+                  id: "TH",
+                  showAsSelected: true,
+                },
+                {
+                  id: "TT",
+                  showAsSelected: true,
+                },
+                {
+                  id: "VI",
+                  showAsSelected: true,
+                },
+                {
+                  id: "GI",
+                  showAsSelected: true,
+                },
+                {
+                  id: "AG",
+                  showAsSelected: true,
+                },
+                {
+                  id: "BB",
+                  showAsSelected: true,
+                },
+                {
+                  id: "AN",
+                  showAsSelected: true,
+                },
+                {
+                  id: "DM",
+                  showAsSelected: true,
+                },
+                {
+                  id: "GD",
+                  showAsSelected: true,
+                },
+                {
+                  id: "KN",
+                  showAsSelected: true,
+                },
+                {
+                  id: "LC",
+                  showAsSelected: true,
+                },
+                {
+                  id: "TC",
+                  showAsSelected: true,
+                },
+                {
+                  id: "CW",
+                  showAsSelected: true,
+                },
+                {
+                  id: "BQ",
+                  showAsSelected: true,
+                },
+                {
+                  id: "VI",
+                  showAsSelected: true,
+                },
+                {
+                  id: "LU",
+                  showAsSelected: true,
+                },
+              ],
+            },
+            areasSettings: {
+              autoZoom: true,
+              color: "#D1D1D1",
+              colorSolid: "#1845AD",
+              selectedColor: "#1845AD",
+              outlineColor: "#FFFFFF",
+              rollOverColor: "#1845AD",
+              rollOverOutlineColor: "#FFFFFF",
+            },
+          });
+        </script>
 
-			<div class="country-number">
-				<h2><span>52</span> countries visted so far</h2>
-			</div>
+        <div class="country-number">
+          <h2><span>52</span> countries visted so far</h2>
+        </div>
 
-			<div class="panel-group country-list" id="accordion">
-				<div class="panel panel-">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-							North America</a>
-						</h4>
-					</div>
-					<div id="collapse1" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li>Antigua and Barbuda</li>
-								<li>Bahamas</li>
-								<li>Barbados</li>
-								<li>Belize</li>
-								<li>Bonaire</li>
-								<li>Canada</li>
-								<li>Costa Rica</li>
-								<li>Curaçao</li>
-								<li>Dominica</li>
-								<li>Dominican Republic</li>
-								<li>El Salvador</li>
-								<li>Grenada</li>
-								<li>Guatemala</li>
-								<li>Honduras</li>
-								<li>Mexico</li>
-								<li>Nicaragua</li>
-								<li>Panama</li>
-								<li>Puerto Rico</li>
-								<li>Saint Kitts and Nevis</li>
-								<li>Saint Lucia</li>
-								<li>Trinidad and Tobago</li>
-								<li>Turks and Caicos</li>
-								<li>United States</li>
-								<li>United States Virgin Islands</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-							South America</a>
-						</h4>
-					</div>
-					<div id="collapse2" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li list-group-item>Argentina</li>
-								<li>Bolivia</li>
-								<li>Brazil</li>
-								<li>Chile</li>
-								<li>Colombia</li>
-								<li>Ecuador</li>
-								<li>Guyana</li>
-								<li>Paraguay</li>
-								<li>Peru</li>
-								<li>Suriname</li>
-								<li>Uruguay</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-							Europe</a>
-						</h4>
-					</div>
-					<div id="collapse3" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li>Albania</li>
-								<li>Austria</li>
-								<li>Belgium</li>
-								<li>Bosnia and Herzegovina</li>
-								<li>Bulgaria</li>
-								<li>Croatia</li>
-								<li>Czechia</li>
-								<li>France</li>
-								<li>Germany</li>
-								<li>Greece</li>
-								<li>Hungary</li>
-								<li>Ireland</li>
-								<li>Italy</li>
-								<li>Kosovo</li>
-								<li>Luxembourg</li>
-								<li>Montenegro</li>
-								<li>Netherlands</li>
-								<li>North Macedonia</li>
-								<li>Portugal</li>
-								<li>Serbia</li>
-								<li>Slovakia</li>
-								<li>Slovenia</li>
-								<li>Spain</li>
-								<li>Turkey</li>
-								<li>United Kingdom</li>
-								<li>Vatican City</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-							Africa</a>
-						</h4>
-					</div>
-					<div id="collapse4" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li>Morocco</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-							Asia</a>
-						</h4>
-					</div>
-					<div id="collapse5" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li>China</li>
-								<li>Japan</li>
-								<li>Thailand</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-							Oceania</a>
-						</h4>
-					</div>
-					<div id="collapse6" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li>None yet</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+        <div class="panel-group country-list" id="accordion">
+          <div class="panel panel-">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapse1"
+                >
+                  North America</a
+                >
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                  <li>Antigua and Barbuda</li>
+                  <li>Bahamas</li>
+                  <li>Barbados</li>
+                  <li>Belize</li>
+                  <li>Bonaire</li>
+                  <li>Canada</li>
+                  <li>Costa Rica</li>
+                  <li>Curaçao</li>
+                  <li>Dominica</li>
+                  <li>Dominican Republic</li>
+                  <li>El Salvador</li>
+                  <li>Grenada</li>
+                  <li>Guatemala</li>
+                  <li>Honduras</li>
+                  <li>Mexico</li>
+                  <li>Nicaragua</li>
+                  <li>Panama</li>
+                  <li>Puerto Rico</li>
+                  <li>Saint Kitts and Nevis</li>
+                  <li>Saint Lucia</li>
+                  <li>Trinidad and Tobago</li>
+                  <li>Turks and Caicos</li>
+                  <li>United States</li>
+                  <li>United States Virgin Islands</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapse2"
+                >
+                  South America</a
+                >
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                  <li list-group-item>Argentina</li>
+                  <li>Bolivia</li>
+                  <li>Brazil</li>
+                  <li>Chile</li>
+                  <li>Colombia</li>
+                  <li>Ecuador</li>
+                  <li>Guyana</li>
+                  <li>Paraguay</li>
+                  <li>Peru</li>
+                  <li>Suriname</li>
+                  <li>Uruguay</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapse3"
+                >
+                  Europe</a
+                >
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                  <li>Albania</li>
+                  <li>Austria</li>
+                  <li>Belgium</li>
+                  <li>Bosnia and Herzegovina</li>
+                  <li>Bulgaria</li>
+                  <li>Croatia</li>
+                  <li>Czechia</li>
+                  <li>France</li>
+                  <li>Germany</li>
+                  <li>Greece</li>
+                  <li>Hungary</li>
+                  <li>Ireland</li>
+                  <li>Italy</li>
+                  <li>Kosovo</li>
+                  <li>Luxembourg</li>
+                  <li>Montenegro</li>
+                  <li>Netherlands</li>
+                  <li>North Macedonia</li>
+                  <li>Portugal</li>
+                  <li>Serbia</li>
+                  <li>Slovakia</li>
+                  <li>Slovenia</li>
+                  <li>Spain</li>
+                  <li>Turkey</li>
+                  <li>United Kingdom</li>
+                  <li>Vatican City</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapse4"
+                >
+                  Africa</a
+                >
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                  <li>Morocco</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapse5"
+                >
+                  Asia</a
+                >
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                  <li>China</li>
+                  <li>Japan</li>
+                  <li>Thailand</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapse6"
+                >
+                  Oceania</a
+                >
+              </h4>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                  <li>None yet</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gap"></div>
+      </div>
+    </div>
 
-			</div>
-			<div class="gap">
-			</div>
-		</div>
-	</div>
-
-<!--
+    <!--
 Website to generate map
 	<a href="https://www.amcharts.com/visited_countries/#AL,AT,BA,BG,HR,CZ,FR,DE,GR,HU,IE,IT,XK,MK,ME,VC,PT,RS,SK,SI,ES,TR,GB,BS,BZ,CA,CR,SV,GT,HN,MX,NI,PA,PR,TT,US,VI,AR,BO,BR,CL,CO,EC,GY,PY,PE,SR,UY,MA,CN,JP,TH">Click</a>
 -->
 
-	<script>
-		function toggleNav() {
-			var x = document.getElementById("side-nav");
-			var y = document.getElementById("content")
-				if (x.style.display === "none") {
-					x.style.display = "block";
-					y.style.display = "none";
-			} else {
-					x.style.display = "none";
-					y.style.display = "block";
-			}
-		}
-	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
+    <script>
+      function toggleNav() {
+        var x = document.getElementById("side-nav");
+        var y = document.getElementById("content");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.display = "none";
+        } else {
+          x.style.display = "none";
+          y.style.display = "block";
+        }
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
 </html>
