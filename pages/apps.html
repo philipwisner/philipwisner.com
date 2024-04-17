@@ -1,249 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109529100-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-109529100-1');
-	</script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="portfolio">
-  <meta name="author" content="philip wisner">
-  <title>Philip Wisner | Web Developer - Apps</title>
-  <link rel="shortcut icon" href="../favicon.ico">
-	<link rel="stylesheet" href="../page-style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
-</head>
-<body>
-	<div class="container-fluid ">
-			<button id="toggle" onclick="toggleNav()">{ }</button>
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse" id="side-nav">
-				<div class="name">
-					<h1>&lt;philip.wisner&gt;</h1>
-					<h2>web developer</h2>
-				</div>
-				<ul class="list">
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="websites.html">Websites</a></li>
-					<li><a href="apps.html" id="active">{ Apps }</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="photography.html">Photography</a></li>
-					<li><a href="design.html">Design</a></li>
-					<li><a href="travel.html">Travel</a></li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-				<ul class="social">
-					<li><a href="https://github.com/philipwisner" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/philipwisner" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-				</ul>
-				<ul class="about-contact">
-					<li><a href="about.html">about</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
-			</div>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-109529100-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-109529100-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="portfolio" />
+    <meta name="author" content="philip wisner" />
+    <title>Philip Wisner | Web Developer - Apps</title>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../page-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <button id="toggle" onclick="toggleNav()">{ }</button>
+      <div
+        class="col-xs-12 col-sm-4 col-md-4 col-lg-3 side-bar collapse"
+        id="side-nav"
+      >
+        <div class="name">
+          <h1>&lt;philip.wisner&gt;</h1>
+          <h2>web developer</h2>
+        </div>
+        <ul class="list">
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="websites.html">Websites</a></li>
+          <li><a href="apps.html" id="active">{ Apps }</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="https://github.com/philipwisner" target="_blank"
+              ><i class="fa fa-github fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/philipwisner" target="_blank"
+              ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <ul class="about-contact">
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
 
-		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
-			<h1>&lt;Apps&gt;</h1>
-			<div class="apps">
-				<div class="app mlab">
-					<div class="left-content">
-					<a href="http://prakash.ai" target="_blank"><img src="../images/MLab-line.svg" alt="" class="img-responsive larger"></a>
-					<div class="app-content">
-						<p>"MLab is dedicated to showcasing the power of Machine Learning."</p>
-						<p>MLab is a demo website to showcase various use cases of Machine Learning. It features multiple tranined models using Python and has a Vue frontend.</p>
-						<div class="button-block">
-							<a href="http://prakash.ai" target="_blank"><button>See it Live</button></a>
-							<a href="https://github.com/philipwisner/machine-learning-lab" target="_blank"><button><i class="fa fa-github" aria-hidden="true"></i> Github</button></a>
-							<a href="https://www.behance.net/gallery/91763401/MLab" target="_blank"><button>Wireframe</button></a>
-						</div>
-					</div>
-					</div>
-					<div class="right-content">
-						<a href="http://prakash.ai" target="_blank"><img src="../images/MLab-Screenshot.png" alt="" class="img-responsive  computer"></a>
-					</div>
-				</div>
-				<hr/>
-				<div class="app streamy">
-					<div class="left-content">
-						<a href="https://philipwisner.github.io/streamy/#/library" target="_blank"><img src="../images/Streamy-screenshot.png" alt="" class="img-responsive computer"></a>
-					</div>
-					<div class="right-content">
-						<a href="https://philipwisner.github.io/streamy/#/library" target="_blank"><img src="../images/streamy-horizontal.svg" alt="" class="img-responsive"></a>
-						<div class="app-content">
-							<p>"Streamy is a simple streaming media player."</p>
-							<p>Streamy is a demo streaming service app made similar to Spotify. Frontend was done using Vue.</p>
-							<div class="button-block">
-								<a href="https://philipwisner.github.io/streamy/#/library" target="_blank"><button>See it Live</button></a>
-								<a href="https://github.com/philipwisner/streamy" target="_blank"><button><i class="fa fa-github" aria-hidden="true"></i> Github</button></a>
-								<a href="https://www.behance.net/gallery/91755021/Streamy" target="_blank"><button>Wireframe</button></a>
-							</div>
-					</div>
-					</div>
-				</div>
-				<hr/>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
+        <h1>&lt;Apps&gt;</h1>
+        <div class="apps">
+          <div class="app mlab">
+            <div class="left-content">
+              <a href="https://app.asset-map.com" target="_blank"
+                ><img
+                  src="../images/assetmap.svg"
+                  alt=""
+                  class="img-responsive larger"
+              /></a>
+              <div class="app-content">
+                <p>"The Financial Picture Worth a Thousand Decisions."</p>
+                <p>
+                  Transform your financial planning process and client
+                  relationships with Asset-Map - the user-friendly mapping
+                  software with informative visualizations.
+                </p>
+                <div class="button-block">
+                  <a href="https://app.asset-map.com" target="_blank"
+                    ><button>See it Live</button></a
+                  >
+                  <a href="https://vimeo.com/936032277" target="_blank">
+                    <button>App Walkthrough</button>
+                  </a>
+                  <a
+                    href="https://www.figma.com/proto/mwXJcFhGgyY73OYIKklKGE/Asset-Map?page-id=1266%3A9393&type=design&node-id=1-25920&viewport=5133%2C-9287%2C0.41&t=dz2tucx4J80wIz2A-9&scaling=min-zoom&starting-point-node-id=1%3A25920"
+                    target="_blank"
+                    ><button>Wireframe</button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="right-content">
+              <a href="https://app.asset-map.com" target="_blank"
+                ><img
+                  src="../images/asset-map-screenshot.png"
+                  alt=""
+                  class="img-responsive computer"
+              /></a>
+            </div>
+          </div>
+          <hr />
+          <div class="app" id="diti">
+            <a href="https://vimeo.com/936032813" target="_blank"
+              ><img
+                src="../images/surveys-horizontal.svg"
+                alt=""
+                class="img-responsive"
+                id="survey"
+            /></a>
+            <a href="https://vimeo.com/936032813" target="_blank"
+              ><img
+                src="../images/surveys-screenshot.png"
+                alt=""
+                class="img-responsive screenshot"
+            /></a>
+            <div class="app-content">
+              <p>“Make info gathering from your clients fun.”</p>
+              <p>
+                This is a simple app built in React that will custom created
+                surveys that allow financial advisors to gather whatever
+                information they need from their clients. That data can then be
+                mapped to a PDF or visible in Asset-Map.
+              </p>
+              <div class="button-block">
+                <a href="https://vimeo.com/936032813" target="_blank"
+                  ><button>Walkthrough</button></a
+                >
+                <a
+                  href="https://www.figma.com/proto/Saz32uktuodrgq4iTTi9lg/Surveys?page-id=0%3A1&type=design&node-id=2-2649&viewport=2393%2C1483%2C0.16&t=nPPgXSV9kwnu9mVr-1&scaling=min-zoom&starting-point-node-id=2%3A3641&mode=design"
+                  target="_blank"
+                  ><button>Wireframe</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="app mlab">
+            <div class="left-content">
+              <a href="http://prakash.ai" target="_blank"
+                ><img
+                  src="../images/MLab-line.svg"
+                  alt=""
+                  class="img-responsive larger"
+              /></a>
+              <div class="app-content">
+                <p>
+                  "MLab is dedicated to showcasing the power of Machine
+                  Learning."
+                </p>
+                <p>
+                  MLab is a demo website to showcase various use cases of
+                  Machine Learning. It features multiple trained models using
+                  Python and has a Vue frontend.
+                </p>
+                <div class="button-block">
+                  <a href="http://prakash.ai" target="_blank"
+                    ><button>See it Live</button></a
+                  >
+                  <a
+                    href="https://github.com/philipwisner/machine-learning-lab"
+                    target="_blank"
+                    ><button>
+                      <i class="fa fa-github" aria-hidden="true"></i> Github
+                    </button></a
+                  >
+                  <a
+                    href="https://www.behance.net/gallery/91763401/MLab"
+                    target="_blank"
+                    ><button>Wireframe</button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="right-content">
+              <a href="http://prakash.ai" target="_blank"
+                ><img
+                  src="../images/MLab-Screenshot.png"
+                  alt=""
+                  class="img-responsive computer"
+              /></a>
+            </div>
+          </div>
+          <hr />
+          <div class="app streamy">
+            <div class="left-content">
+              <a
+                href="https://philipwisner.github.io/streamy/#/library"
+                target="_blank"
+                ><img
+                  src="../images/Streamy-screenshot.png"
+                  alt=""
+                  class="img-responsive computer"
+              /></a>
+            </div>
+            <div class="right-content">
+              <a
+                href="https://philipwisner.github.io/streamy/#/library"
+                target="_blank"
+                ><img
+                  src="../images/streamy-horizontal.svg"
+                  alt=""
+                  class="img-responsive"
+              /></a>
+              <div class="app-content">
+                <p>"Streamy is a simple streaming media player."</p>
+                <p>
+                  Streamy is a demo streaming service app made similar to
+                  Spotify. Frontend was done using Vue.
+                </p>
+                <div class="button-block">
+                  <a
+                    href="https://philipwisner.github.io/streamy/#/library"
+                    target="_blank"
+                    ><button>See it Live</button></a
+                  >
+                  <a
+                    href="https://github.com/philipwisner/streamy"
+                    target="_blank"
+                    ><button>
+                      <i class="fa fa-github" aria-hidden="true"></i> Github
+                    </button></a
+                  >
+                  <a
+                    href="https://www.behance.net/gallery/91755021/Streamy"
+                    target="_blank"
+                    ><button>Wireframe</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="app mlab">
+            <div class="left-content">
+              <a href="https://vimeo.com/389911355" target="_blank">
+                <img
+                  src="../images/AYS.svg"
+                  alt="logo"
+                  class="img-responsive larger"
+                />
+              </a>
+              <div class="app-content">
+                <p>"The goal of AYS is to improve the patient experience."</p>
+                <p>
+                  AYS is a rounding and issue reporting tool built for
+                  hospitals. The purpose is to improve the patient's experience
+                  as well as the healthcare experience. This was built on the
+                  ServiceNow Platform with an Angular UI intended for tablets.
+                </p>
+                <div class="button-block">
+                  <a href=https://vimeo.com/389911355 target="_blank">
+                  <button>App Walkthrough</button>
+                </div>
+              </div>
+            </div>
+            <div class="right-content">
+              <a href="https://vimeo.com/389911355" target="_blank"
+                ><img
+                  src="../images/AYS-screenshot.png"
+                  alt="screenshot"
+                  class="img-responsive computer"
+              /></a>
+            </div>
+          </div>
+          <hr />
+          <div class="app streamy">
+            <div class="left-content">
+              <a href="https://vimeo.com/389911668" target="_blank"
+                ><img
+                  src="../images/EquipMe-screenshot.png"
+                  alt=""
+                  class="img-responsive computer"
+              /></a>
+            </div>
+            <div class="right-content">
+              <a href="https://vimeo.com/389911925" target="_blank"
+                ><img src="../images/EquipMe.svg" alt="" class="img-responsive"
+              /></a>
+              <div class="app-content">
+                <p>
+                  EquipMe is a tool for reserving specialty lab equipment. Users
+                  can book time slots to use equipment and lab managers can
+                  approve/reject requests as well as send invoices and manage
+                  billing. This was built on the ServiceNow Platform with an
+                  Angular UI.
+                </p>
+                <div class="button-block">
+                  <a href="https://vimeo.com/389911925" target="_blank"
+                    ><button>New Reservation Demo</button></a
+                  >
+                  <a href="https://vimeo.com/389911668" target="_blank"
+                    ><button>Reservations Demo</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="app">
+            <a href="https://vimeo.com/389911484" target="_blank"
+              ><img
+                src="../images/VendorReg-horizontal.svg"
+                alt=""
+                class="img-responsive"
+            /></a>
+            <a href="https://vimeo.com/389911603" target="_blank"
+              ><img
+                src="../images/VendorReg-screenshot.png"
+                alt=""
+                class="img-responsive screenshot"
+            /></a>
+            <div class="app-content">
+              <p>
+                "An app for keeping track of vendors, products and contacts."
+              </p>
+              <p>
+                This app was built to help manage and track all the vendors,
+                providers, services, contacts and products used across
+                Jefferson. It has two core functions: adding new vendors,
+                products and contacts as well as managing new requests and
+                updating existing vendors. This was built on the ServiceNow
+                Platform with an Angular UI.
+              </p>
+              <div class="button-block">
+                <a href="https://vimeo.com/389911603" target="_blank"
+                  ><button>New Vendor Demo</button></a
+                >
+                <a href="https://vimeo.com/389911484" target="_blank"
+                  ><button>Requests Demo</button></a
+                >
+                <a
+                  href="https://xd.adobe.com/view/06ca6252-2189-4dc6-57b6-cf4362adec60-70fb/"
+                  target="_blank"
+                  ><button>Wireframe</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="app" id="diti">
+            <a href="https://vimeo.com/389910883" target="_blank"
+              ><img
+                src="../images/Ask-horizontal.svg"
+                alt=""
+                class="img-responsive"
+                id="diti-logo"
+            /></a>
+            <a href="https://vimeo.com/389910883" target="_blank"
+              ><img
+                src="../images/Ask-screenshot.png"
+                alt=""
+                class="img-responsive screenshot"
+            /></a>
+            <div class="app-content">
+              <p>“An app to simplify public Q&amp;A's.”</p>
+              <p>
+                This is a simple app built to moderate and display questions
+                submitted by users via text. It uses Twilio to send and receive
+                messages as well as machine learning to help flag inappropriate
+                questions. This was built on the ServiceNow Platform with an
+                Angular UI.
+              </p>
+              <div class="button-block">
+                <a href="https://vimeo.com/389910883" target="_blank"
+                  ><button>See it Live</button></a
+                >
+                <a
+                  href="https://www.behance.net/gallery/91765771/ASK-Q-A-App"
+                  target="_blank"
+                  ><button>Wireframe</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="app">
+            <a
+              href="https://encompass.mathematicalthinking.org/"
+              target="_blank"
+              ><img
+                src="../images/encompass-line.svg"
+                alt=""
+                class="img-responsive"
+            /></a>
+            <a
+              href="https://encompass.mathematicalthinking.org/"
+              target="_blank"
+              ><img
+                src="../images/encompass-screenshot.png"
+                alt=""
+                class="img-responsive screenshot"
+            /></a>
+            <div class="app-content">
+              <p>
+                Encompass is a web application designed to facilitate the
+                process of learning from and providing feedback on student work,
+                for both individual teachers and for collaborative and
+                professional development purposes. Built with Ember, Express,
+                Node and Mongo.
+              </p>
+              <div class="button-block">
+                <a
+                  href="https://encompass.mathematicalthinking.org/"
+                  target="_blank"
+                  ><button>See it Live</button></a
+                >
+                <a
+                  href="https://github.com/philipwisner/encompass"
+                  target="_blank"
+                  ><button>
+                    <i class="fa fa-github" aria-hidden="true"></i> Github
+                  </button></a
+                >
+                <a
+                  href="https://www.behance.net/gallery/75904551/Encompass"
+                  target="_blank"
+                  ><button>Wireframe</button></a
+                >
+                <a
+                  href="https://www.figma.com/file/XtowRSlCRb56HoKjwDw6Ch6A/Encompass-Original?node-id=1%3A2"
+                  target="_blank"
+                  ><button>Before</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="app" id="diti">
+            <a href="https://philipwisner.github.io/Diti/" target="_blank"
+              ><img
+                src="../images/Diti.svg"
+                alt=""
+                class="img-responsive"
+                id="diti-logo"
+            /></a>
+            <a href="https://philipwisner.github.io/Diti/" target="_blank"
+              ><img
+                src="../images/diti-screenshot.png"
+                alt=""
+                class="img-responsive screenshot"
+            /></a>
+            <div class="app-content">
+              <p>“A Todo App for the Modern Age.”</p>
+              <p>
+                This is a basic Todo App created completely from scratch using
+                only Vanilla JavaScript. The data is being saved to a Firebase
+                Database.
+              </p>
+              <div class="button-block">
+                <a href="https://philipwisner.github.io/Diti/" target="_blank"
+                  ><button>See it Live</button></a
+                >
+                <a href="https://github.com/philipwisner/Diti" target="_blank"
+                  ><button>
+                    <i class="fa fa-github" aria-hidden="true"></i> Github
+                  </button></a
+                >
+                <a
+                  href="https://www.figma.com/proto/gMhaqcKRT30i7R3lLXln79o4/Diti?scaling=contain&node-id=2%3A2"
+                  target="_blank"
+                  ><button>Wireframe</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="app">
+            <a href="https://minimo.herokuapp.com" target="_blank"
+              ><img
+                src="../images/minimo-line.svg"
+                alt=""
+                class="img-responsive"
+            /></a>
+            <a href="https://minimo.herokuapp.com" target="_blank"
+              ><img
+                src="../images/minimo-user.png"
+                alt=""
+                class="img-responsive screenshot"
+            /></a>
+            <div class="app-content">
+              <p>
+                “Minimo is a minimalist thought capturing and blogging
+                platform.”
+              </p>
+              <p>
+                This is a full stack app created with the MEAN stack as my final
+                project for Ironhack. Check out my presentation on
+                <a
+                  href="http://slides.com/philipwisner/minimo/fullscreen#/"
+                  target="_blank"
+                  >slides</a
+                >.
+              </p>
+              <div class="button-block">
+                <a href="https://minimo.herokuapp.com" target="_blank"
+                  ><button>See it Live</button></a
+                >
+                <a
+                  href="https://github.com/philipwisner/minimo-frontend"
+                  target="_blank"
+                  ><button>
+                    <i class="fa fa-github" aria-hidden="true"></i> Github
+                  </button></a
+                >
+                <a href="../images/Minimo%20Mobile.pdf" target="_blank"
+                  ><button>Wireframe</button></a
+                >
+                <a
+                  href="https://github.com/philipwisner/minimo-backend"
+                  target="_blank"
+                  ><button>See More</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="app" id="farm-voyage">
+            <a href="https://farm-voyage.herokuapp.com/" target="_blank"
+              ><img
+                src="../images/farm%20voyage-line.svg"
+                alt=""
+                class="img-responsive"
+                id="farm-voyage-logo"
+            /></a>
+            <a href="https://farm-voyage.herokuapp.com/" target="_blank"
+              ><img
+                src="../images/farm-voyage-home.png"
+                alt=""
+                class="img-responsive screenshot"
+            /></a>
+            <div class="app-content">
+              <p>
+                “Find local farms, vineyards, ecolodges before you plan your
+                next road trip.”
+              </p>
+              <p>
+                This is a full stack app created with Node, Express and MongoDB.
+                This was my second project for Ironhack made with
+                <a href="https://github.com/Digitalele" target="_blank"
+                  >@digitalele.</a
+                >
+                Check out our presentation on
+                <a
+                  href="http://slides.com/philipwisner/farm-voyage/fullscreen#/"
+                  target="_blank"
+                  >slides</a
+                >.
+              </p>
+              <div class="button-block">
+                <a href="https://farm-voyage.herokuapp.com/" target="_blank"
+                  ><button>See it Live</button></a
+                >
+                <a
+                  href="https://github.com/philipwisner/FarmVoyage"
+                  target="_blank"
+                  ><button>
+                    <i class="fa fa-github" aria-hidden="true"></i> Github
+                  </button></a
+                >
+                <a
+                  href="https://www.figma.com/proto/cXt9FG20cHbW3SKDexMcG9Eg/Farm-Voyage?scaling=contain&node-id=1%3A2"
+                  target="_blank"
+                  ><button>Wireframe</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="app">
+            <a href="https://philipwisner.github.io/Drag-Quiz/#" target="_blank"
+              ><img
+                src="../images/dragquiz-line.svg"
+                alt=""
+                class="img-responsive"
+            /></a>
+            <a href="https://philipwisner.github.io/Drag-Quiz/#" target="_blank"
+              ><img
+                src="../images/dragquiz-home.png"
+                alt=""
+                class="img-responsive screenshot"
+            /></a>
+            <div class="app-content">
+              <p>
+                “The best and most beautiful test of drag knowledge, because
+                when it comes to drag, the look matters.”
+              </p>
+              <p>
+                This is trivia game all about drag queens. It was made with just
+                jQuery and Materialize. Check out my presentation on
+                <a
+                  href="http://slides.com/philipwisner/drag-quiz/fullscreen#/"
+                  target="_blank"
+                  >slides</a
+                >.
+              </p>
+              <div class="button-block">
+                <a
+                  href="https://philipwisner.github.io/Drag-Quiz/#"
+                  target="_blank"
+                  ><button>See it Live</button></a
+                >
+                <a
+                  href="https://github.com/philipwisner/Drag-Quiz"
+                  target="_blank"
+                  ><button>
+                    <i class="fa fa-github" aria-hidden="true"></i> Github
+                  </button></a
+                >
+                <a
+                  href="https://www.figma.com/proto/cCYD28SfgVfPz5368KJV6xC9/Drag-Quiz-Wireframes?scaling=contain&node-id=1%3A1181"
+                  target="_blank"
+                  ><button>Wireframe</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-				<div class="app mlab">
-					<div class="left-content">
-					<a href="https://vimeo.com/389911355" target="_blank"><img src="../images/AYS.svg" alt="" class="img-responsive larger"></a>
-					<div class="app-content">
-						<p>"The goal of AYS is to improve the patient experience."</p>
-						<p>AYS is a rounding and issue reporting tool built for hospitals. The purpose is to improve the patient's experience as well as the healthcare experience. This was built on the ServiceNow Platform with an Angular UI intended for tablets.</p>
-						<div class="button-block">
-							<a href=https://vimeo.com/389911355 target="_blank"><button>App Walkthrough</button></a>
-						</div>
-					</div>
-					</div>
-					<div class="right-content">
-						<a href="https://vimeo.com/389911355" target="_blank"><img src="../images/AYS-screenshot.png" alt="" class="img-responsive  computer"></a>
-					</div>
-				</div>
-				<hr/>
-				<div class="app streamy">
-					<div class="left-content">
-						<a href="https://vimeo.com/389911668" target="_blank"><img src="../images/EquipMe-screenshot.png" alt="" class="img-responsive computer"></a>
-					</div>
-					<div class="right-content">
-						<a href="https://vimeo.com/389911925" target="_blank"><img src="../images/EquipMe.svg" alt="" class="img-responsive"></a>
-						<div class="app-content">
-							<p>EquipMe is a tool for reserving specialty lab equipment. Users can book time slots to use equipment and lab managers can approve/reject requests as well as send invoices and manage billing. This was built on the ServiceNow Platform with an Angular UI.</p>
-							<div class="button-block">
-								<a href="https://vimeo.com/389911925" target="_blank"><button>New Reservation Demo</button></a>
-								<a href="https://vimeo.com/389911668" target="_blank"><button>Reservations Demo</button></a>
-							</div>
-					</div>
-					</div>
-				</div>
-				<hr/>
-
-				<div class="app">
-					<a href="https://vimeo.com/389911484" target="_blank"><img src="../images/VendorReg-horizontal.svg" alt="" class="img-responsive"></a>
-					<a href="https://vimeo.com/389911603" target="_blank"><img src="../images/VendorReg-screenshot.png" alt="" class="img-responsive screenshot"></a>
-					<div class="app-content">
-						<p>"An app for keeping track of vendors, products and contacts."</p>
-						<p>This app was built to help manage and track all the vendors, providers, services, contacts and products used across Jefferson. It has two core functions: adding new vendors, products and contacts as well as managing new requests and updating existing vendors. This was built on the ServiceNow Platform with an Angular UI.</p>
-						<div class="button-block">
-							<a href="https://vimeo.com/389911603" target="_blank"><button>New Vendor Demo</button></a>
-							<a href="https://vimeo.com/389911484" target="_blank"><button>Requests Demo</button></a>
-							<a href="https://xd.adobe.com/view/06ca6252-2189-4dc6-57b6-cf4362adec60-70fb/" target="_blank"><button>Wireframe</button></a>
-						</div>
-					</div>
-				</div>
-				<hr/>
-
-				<div class="app" id="diti">
-					<a href="https://vimeo.com/389910883" target="_blank"><img src="../images/Ask-horizontal.svg" alt="" class="img-responsive" id="diti-logo"></a>
-					<a href="https://vimeo.com/389910883" target="_blank"><img src="../images/Ask-screenshot.png" alt="" class="img-responsive screenshot"></a>
-					<div class="app-content">
-						<p>“An app to simplify public Q&amp;A's.”</p>
-            <p>This is a simple app built to moderate and display questions submitted by users via text. It uses Twilio to send and recieve messages as well as machine learning to help flag inappropriate questions. This was built on the ServiceNow Platform with an Angular UI.</p>
-						<div class="button-block">
-							<a href="https://vimeo.com/389910883" target="_blank"><button>See it Live</button></a>
-							<a href="https://www.behance.net/gallery/91765771/ASK-Q-A-App" target="_blank"><button>Wireframe</button></a>
-						</div>
-					</div>
-				</div>
-				<hr>
-
-
-				<div class="app">
-					<a href="https://encompass.mathematicalthinking.org/" target="_blank"><img src="../images/encompass-line.svg" alt="" class="img-responsive"></a>
-					<a href="https://encompass.mathematicalthinking.org/" target="_blank"><img src="../images/encompass-screenshot.png" alt="" class="img-responsive screenshot"></a>
-					<div class="app-content">
-						<p>Encompass is a web application designed to facilitate the process of learning from and providing feedback on student work, for both individual teachers and for collaborative and professional development purposes. Built with Ember, Express, Node and Mongo.</p>
-						<div class="button-block">
-							<a href="https://encompass.mathematicalthinking.org/" target="_blank"><button>See it Live</button></a>
-							<a href="https://github.com/philipwisner/encompass" target="_blank"><button><i class="fa fa-github" aria-hidden="true"></i> Github</button></a>
-							<a href="https://www.behance.net/gallery/75904551/Encompass" target="_blank"><button>Wireframe</button></a>
-							<a href="https://www.figma.com/file/XtowRSlCRb56HoKjwDw6Ch6A/Encompass-Original?node-id=1%3A2" target="_blank"><button>Before</button></a>
-						</div>
-					</div>
-				</div>
-				<hr/>
-				<div class="app" id="diti">
-					<a href="https://philipwisner.github.io/Diti/" target="_blank"><img src="../images/Diti.svg" alt="" class="img-responsive" id="diti-logo"></a>
-					<a href="https://philipwisner.github.io/Diti/" target="_blank"><img src="../images/diti-screenshot.png" alt="" class="img-responsive screenshot"></a>
-					<div class="app-content">
-						<p>“A Todo App for the Modern Age.”</p>
-            <p>This is a basic Todo App created completely from scratch using only Vanilla JavaScript. The data is being saved to a Firebase Database.</p>
-						<div class="button-block">
-							<a href="https://philipwisner.github.io/Diti/" target="_blank"><button>See it Live</button></a>
-							<a href="https://github.com/philipwisner/Diti" target="_blank"><button><i class="fa fa-github" aria-hidden="true"></i> Github</button></a>
-							<a href="https://www.figma.com/proto/gMhaqcKRT30i7R3lLXln79o4/Diti?scaling=contain&node-id=2%3A2" target="_blank"><button>Wireframe</button></a>
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div class="app">
-					<a href="https://minimo.herokuapp.com" target="_blank"><img src="../images/minimo-line.svg" alt="" class="img-responsive"></a>
-					<a href="https://minimo.herokuapp.com" target="_blank"><img src="../images/minimo-user.png" alt="" class="img-responsive screenshot"></a>
-					<div class="app-content">
-						<p>“Minimo is a minimalist thought capturing and blogging platform.”</p>
-						<p>This is a full stack app created with the MEAN stack as my final project for Ironhack. Check out my presentation on <a href="http://slides.com/philipwisner/minimo/fullscreen#/" target="_blank">slides</a>.</p>
-						<div class="button-block">
-							<a href="https://minimo.herokuapp.com" target="_blank"><button>See it Live</button></a>
-							<a href="https://github.com/philipwisner/minimo-frontend" target="_blank"><button><i class="fa fa-github" aria-hidden="true"></i> Github</button></a>
-							<a href="../images/Minimo%20Mobile.pdf" target="_blank"><button>Wireframe</button></a>
-							<a href="https://github.com/philipwisner/minimo-backend" target="_blank"><button>See More</button></a>
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div class="app" id="farm-voyage">
-					<a href="https://farm-voyage.herokuapp.com/" target="_blank"><img src="../images/farm%20voyage-line.svg" alt="" class="img-responsive" id="farm-voyage-logo"></a>
-					<a href="https://farm-voyage.herokuapp.com/" target="_blank"><img src="../images/farm-voyage-home.png" alt="" class="img-responsive screenshot"></a>
-					<div class="app-content">
-						<p>“Find local farms, vineyards, ecolodges before you plan your next roadtrip.”</p>
-						<p>This is a full stack app created with Node, Express and MongoDB. This was my second project for Ironhack made with <a href="https://github.com/Digitalele" target="_blank">@digitalele.</a> Check out our presentation on <a href="http://slides.com/philipwisner/farm-voyage/fullscreen#/" target="_blank">slides</a>.</p>
-						<div class="button-block">
-							<a href="https://farm-voyage.herokuapp.com/" target="_blank"><button>See it Live</button></a>
-							<a href="https://github.com/philipwisner/FarmVoyage" target="_blank"><button><i class="fa fa-github" aria-hidden="true"></i> Github</button></a>
-							<a href="https://www.figma.com/proto/cXt9FG20cHbW3SKDexMcG9Eg/Farm-Voyage?scaling=contain&node-id=1%3A2" target="_blank"><button>Wireframe</button></a>
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div class="app">
-					<a href="https://philipwisner.github.io/Drag-Quiz/#" target="_blank"><img src="../images/dragquiz-line.svg" alt="" class="img-responsive"></a>
-					<a href="https://philipwisner.github.io/Drag-Quiz/#" target="_blank"><img src="../images/dragquiz-home.png" alt="" class="img-responsive screenshot"></a>
-					<div class="app-content">
-						<p>“The best and most beautiful test of drag knowledge, because when it comes to drag, the look matters.”</p>
-						<p>This is trivia game all about drag queens. It was made with just jQuery and Materialize. Check out my presentation on <a href="http://slides.com/philipwisner/drag-quiz/fullscreen#/" target="_blank">slides</a>.</p>
-						<div class="button-block">
-							<a href="https://philipwisner.github.io/Drag-Quiz/#" target="_blank"><button>See it Live</button></a>
-							<a href="https://github.com/philipwisner/Drag-Quiz" target="_blank"><button><i class="fa fa-github" aria-hidden="true"></i> Github</button></a>
-							<a href="https://www.figma.com/proto/cCYD28SfgVfPz5368KJV6xC9/Drag-Quiz-Wireframes?scaling=contain&node-id=1%3A1181" target="_blank"><button>Wireframe</button></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script>
-		function toggleNav() {
-			var x = document.getElementById("side-nav");
-			var y = document.getElementById("content")
-				if (x.style.display === "none") {
-					x.style.display = "block";
-					y.style.display = "none";
-			} else {
-					x.style.display = "none";
-					y.style.display = "block";
-			}
-		}
-	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
+    <script>
+      function toggleNav() {
+        var x = document.getElementById("side-nav");
+        var y = document.getElementById("content");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.display = "none";
+        } else {
+          x.style.display = "none";
+          y.style.display = "block";
+        }
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
 </html>

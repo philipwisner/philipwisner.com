@@ -1335,7 +1335,16 @@
   .apps #diti {
     margin-bottom: 125px;
   }
+  .apps #survey {
+    margin-bottom: 125px;
+  }
   .apps #diti img {
+    float: right;
+    max-width: 450px;
+    margin-bottom: 6vh;
+    margin-top: 2vh;
+  }
+  .apps #survey img {
     float: right;
     max-width: 450px;
     margin-bottom: 6vh;
@@ -1345,6 +1354,11 @@
     position: relative;
     left: -450px;
     max-width: 300px;
+  }
+  .apps #diti #survey {
+    position: relative;
+    left: -410px;
+    max-width: 350px;
   }
   .apps #diti .screenshot {
     float: left;
