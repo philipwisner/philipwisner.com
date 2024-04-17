@@ -424,6 +424,11 @@
   font-weight: 700;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .panel-heading {
   border-bottom: 0.5px solid #95989A !important;
   border-radius: 0 !important;
@@ -457,10 +462,17 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .flex .portfolio-item {
+      width: 100%;
+  }
+}
+
 .photography {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 
 .photography .insta p {
   text-align: center;
